@@ -8,21 +8,19 @@ const duHacksFaq = [
     question: <>Who can participate? 🌐</>,
     answer: (
       <>
-        DUHacks 3.0 is open to a diverse range of participants, including
-        students, professionals, and individuals with varying skill levels.
-        Whether you are a beginner or an experienced developer, despite the
-        field of academic discipline chosen, you are eligible to join us! 🚀
+        Code Cubicle 3.0 welcomes participants from all backgrounds, whether you’re a student, 
+        professional, or have varying levels of experience. No matter if you’re just starting 
+        or already have advanced skills, and regardless of your academic field, you are invited 
+        to be part of the event! 🚀
       </>
     ),
   },
   {
-    question: <>What if this is my first hackathon? </>,
+    question: <>When and where is Code Cubicle 3.0 2024 taking place? </>,
     answer: (
       <>
-        Congratulations on considering your first hackathon! DUHacks 3.0 is a
-        great opportunity for beginners. We would be having expert sessions,
-        guidance by mentors along the way to help you out in executing your
-        ideas into projects. See you in the hackathon! 🤖
+        Code Cubicle 3.0 2024 is an offline event scheduled for 21st September. The venue is Mastercard 
+        Office, Gurugram. It's a hackathon that promises an immersive experience in tech innovation 🤖
       </>
     ),
   },
@@ -34,7 +32,9 @@ const duHacksFaq = [
     ),
     answer: (
       <>
-        No. There is no registration fee for participating in the hackathon. This approach ensures that creativity and innovation can flourish without restrictions, allowing participants to immerse themselves in a collaborative and dynamic environment.🌐✨
+        No. There is no registration fee for participating in the hackathon. This approach ensures that 
+        creativity and innovation can flourish without restrictions, allowing participants to immerse themselves 
+        in a collaborative and dynamic environment.🌐✨
       </>
     ),
   },
@@ -46,7 +46,7 @@ const duHacksFaq = [
     ),
     answer: (
       <>
-        Only selected students from DDU are permitted for offline participation. Participants from any other locations are not allowed.🚫
+        Only selected students from Code Cubicle 3.0 are permitted for offline participation.
       </>
     ),
   },
@@ -58,19 +58,22 @@ const duHacksFaq = [
     ),
     answer: (
       <>
-        No, DUHacks 3.0 does not offer travel reimbursement for participants in offline mode. Participants are responsible for their travel expenses, and we recommend planning accordingly.
+        No, Code Cubicle 3.0 does not offer travel reimbursement for participants in offline mode. 
+        Participants are responsible for their travel expenses, and we recommend planning accordingly.
       </>
     ),
   },
   {
     question: (
       <>
-        Will everyone from DDU be eligible for offline tickets, or is there a selection process? 
+        What exclusive perks are provided to participants? 
       </>
     ),
     answer: (
       <>
-        Not everyone from DDU will receive offline tickets for DUHacks3.O. The selection process involves a shortlisting of participants based on specific criteria, such as performance, engagement, and commitment. Eligible individuals will be notified in advance.😊
+        Participants at Code Cubicle 3.0 enjoy exclusive perks, including free swags, networking 
+        opportunities with industry experts, goodies, accommodation, meals, and much more, enhancing 
+        their overall experience.
       </>
     ),
   },
@@ -87,7 +90,7 @@ const duHacksFaq = [
     question: <>Are team members from other colleges allowed? </>,
     answer: (
       <>
-        Yes, DUHacks 3.0 welcomes participants from diverse backgrounds,
+        Yes, Code Cubicle 3.0 welcomes participants from diverse backgrounds,
         including those from different colleges. The hackathon encourages
         collaboration and networking among individuals with varied experiences
         and expertise. 🌍
@@ -95,31 +98,40 @@ const duHacksFaq = [
     ),
   },
   {
-    question: <>What will I get after attending DUHacks 3.0? 🏆</>,
+    question: <>What should I bring to Code Cubicle 3.0, and what will be provided by the organizers?</>,
     answer: (
       <>
-        DUHacks 3.0 offers a dynamic platform for learning and collaboration.
-        Engage in workshops, network with industry professionals, and develop
-        hands-on projects. Gain exposure to cutting-edge technologies, enhance
-        problem-solving skills, and compete for prizes. Elevate your resume,
-        build lasting connections, and join a vibrant community of innovators in
-        this national-level hackathon. 🚀
+        Participants are encouraged to bring their laptops and any specific tools 
+        or hardware they may need for coding. Organizers will provide the necessary 
+        infrastructure, but participants should ensure they have everything they 
+        need for a successful hacking experience.
       </>
     ),
   },
   {
-    question: <> What if I do not have a team?🤔 </>,
+    question: <> How can I stay updated on Code Cubicle 3.0 announcements and details?🤔 </>,
     answer: (
       <>
-        We have a great community on Discord. Reach out to other
-        innovators, collaborate, communicate, and make things possible! 🤝
+        Stay updated on Code Cubicle 3.0 announcements and details by regularly checking the 
+        official website and on devfolio. Additionally, follow our social media channels for the latest 
+        news and updates regarding the event.
       </>
     ),
   },
   {
-    question: <>Have more questions? 🤔</>,
-    answer: <>Feel free to write to us at gdsc@ddu.ac.in or create a ticket🎫 on <a className="text-blue-400 underline" href="https://discord.gg/T2fzD8c2j2" target="_blank">discord</a>
+    question: <>How can participants connect with like-minded individuals and industry 
+    experts during Code Cubicle?</>,
+    answer: <>Participants can connect with like-minded individuals and industry experts 
+    through networking sessions, project collaborations, and various interactive 
+    opportunities provided during Code Cubicle 3.0. It's a unique chance to learn, 
+    compete, and establish valuable connections.
     </>,
+  },
+  {
+    question: <>Who are the organizers of Code Cubicle 3.0, and what is their mission?</>,
+    answer: <>Code Cubicle 3.0 is hosted by the team efforts of Geek Room. Their mission 
+    is to provide a platform for tech enthusiasts to showcase their skills and amplify their 
+    potential through an exciting blend of competition, learning, and groundbreaking innovation.</>,
   },
 ];
 
@@ -136,7 +148,7 @@ export default function FAQ() {
             </div>
 
             <p className="mt-2 font text-white dark:text-gray-300 ">
-              Join with DUHacks and experience the breeze of hackathon with us.
+              Join with Code Cubicle 3.0 and experience the breeze of hackathon with us.
             </p>
             <div className="faqContainer1 relative">
               {/* <div className="flex justify-center"> */}

@@ -60,13 +60,13 @@ const Content: React.FC = () => {
             variants={childVariants}
             className="md:text-4xl text-3xl text-white tracking-wider font-logo font-extrabold m-1 mb-2"
           >
-            DUHacks 3.0
+            Code Cubicle 3.0
           </motion.div>
           <motion.div
             variants={childVariants}
             className="md:text-3xl text-2xl text-white font-content font-bold m-1 mb-2"
           >
-            24-25TH FEB
+            21st SEPT
           </motion.div>
           {/* <br /> */}
         </motion.div>
@@ -75,7 +75,7 @@ const Content: React.FC = () => {
           animate="visible"
           className=" text-white max-w-[360px] font-poppins m-auto md:mt-4 mt-2 md:text-xl"
         >
-          HACK FOR A CHANGE !
+          Delhi’s Largest Coding Community brings you the 3rd edition of the Code Cubicle, the best coding experience in the town.
         </motion.p>
       </div>
       <motion.div className="text-md text-white">
