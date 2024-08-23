@@ -11,18 +11,6 @@
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
-    ],
-    "/swag/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/swag/page.css",
-      "static/chunks/app/swag/page.js"
-    ],
-    "/swag/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/swag/layout.css",
-      "static/chunks/app/swag/layout.js"
     ]
   }
 }

@@ -109,11 +109,11 @@ const duHacksFaq = [
     ),
   },
   {
-    question: <> How can I stay updated on Code Cubicle 2.0 announcements and details?🤔 </>,
+    question: <> How can I stay updated on Code Cubicle 3.0 announcements and details?🤔 </>,
     answer: (
       <>
         Stay updated on Code Cubicle 3.0 announcements and details by regularly checking the 
-        official website. Additionally, follow their social media channels for the latest 
+        official website and on devfolio. Additionally, follow our social media channels for the latest 
         news and updates regarding the event.
       </>
     ),
@@ -128,7 +128,7 @@ const duHacksFaq = [
     </>,
   },
   {
-    question: <>Who are the organizers of Code Cubicle 2.0, and what is their mission?</>,
+    question: <>Who are the organizers of Code Cubicle 3.0, and what is their mission?</>,
     answer: <>Code Cubicle 3.0 is hosted by the team efforts of Geek Room. Their mission 
     is to provide a platform for tech enthusiasts to showcase their skills and amplify their 
     potential through an exciting blend of competition, learning, and groundbreaking innovation.</>,
