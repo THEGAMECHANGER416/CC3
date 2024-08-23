@@ -481,7 +481,7 @@ video {
 [hidden] {
   display: none;
 }
-      .nav-titles {
+  .nav-titles {
   position: relative;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -501,30 +501,30 @@ video {
   text-decoration-line: none;
   opacity: 0.75;
 }
-      .nav-titles::before {
+  .nav-titles::before {
   position: absolute;
   height: 0.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(234 0 27 / var(--tw-bg-opacity));
   content: var(--tw-content);
   transition-duration: 300ms;
 }
-      .nav-titles:hover {
+  .nav-titles:hover {
   opacity: 1;
 }
 
-      .nav-titles-ltr::before {
+  .nav-titles-ltr::before {
   bottom: 0.625rem;
   content: var(--tw-content);
   width: 0px;
 }
 
-      .nav-titles-ltr:hover::before {
+  .nav-titles-ltr:hover::before {
   content: var(--tw-content);
   width: 100%;
 }
 
-      .nav-dropdown-titles {
+  .nav-dropdown-titles {
   margin-bottom: 1rem;
   display: block;
   border-radius: 0.5rem;
@@ -542,7 +542,7 @@ video {
   transition-duration: 300ms;
 }
 
-      .nav-dropdown-titles:hover {
+  .nav-dropdown-titles:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -550,7 +550,7 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-      .nav {
+  .nav {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -571,28 +571,28 @@ video {
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 400;
-      background: rgba(39, 39, 42, 0.43);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      border-bottom: 1px solid rgba(39, 39, 42, 0.5);
-      backdrop-filter: blur(9.1px);
-      -webkit-backdrop-filter: blur(9.1px);
+  background: rgba(39, 39, 42, 0.43);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(39, 39, 42, 0.5);
+  backdrop-filter: blur(9.1px);
+  -webkit-backdrop-filter: blur(9.1px);
 }
 
-      @media (min-width: 1024px) {
+  @media (min-width: 1024px) {
 
   .nav {
     justify-content: space-between;
   }
 }
 
-      @media (min-width: 1440px) {
+  @media (min-width: 1440px) {
 
   .nav {
     padding-left: 11rem;
     padding-right: 11rem;
   }
 }
-      .nav-dropdown {
+  .nav-dropdown {
   position: fixed;
   inset: 0px;
   margin-top: 6rem;
@@ -1871,17 +1871,29 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.glassy-effect{
-      background: rgba(39, 39, 42, 0.43);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      border-bottom: 1px solid rgba(39, 39, 42, 0.5);
-      backdrop-filter: blur(9.1px);
-      -webkit-backdrop-filter: blur(9.1px);
+.glassy-effect {
+  background: rgba(39, 39, 42, 0.43);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(39, 39, 42, 0.5);
+  backdrop-filter: blur(9.1px);
+  -webkit-backdrop-filter: blur(9.1px);
 }
 
 .border-top {
-      border-top: 1px solid rgba(39, 39, 42, 0.5);
+  border-top: 1px solid rgba(39, 39, 42, 0.5);
 }
+.nav-titles:hover {
+  color: rgb(234, 0, 27);
+  font-weight: bold;
+}
+
+/* .nav-titles::before {
+  content: "";
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(234, 0, 27);
+} */
 
 .before\:absolute::before {
   content: var(--tw-content);
@@ -1983,6 +1995,10 @@ video {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
 }
 
 .hover\:text-transparent:hover {
@@ -2597,8 +2613,8 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:flex-row {
-    flex-direction: row;
+  .lg\:flex-row-reverse {
+    flex-direction: row-reverse;
   }
 
   .lg\:justify-center {
@@ -2616,11 +2632,6 @@ video {
   .lg\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
-  }
-
-  .lg\:px-96 {
-    padding-left: 24rem;
-    padding-right: 24rem;
   }
 
   .lg\:pb-8 {
@@ -2727,6 +2738,7 @@ video {
     color: rgb(161 161 170 / var(--tw-text-opacity));
   }
 }
+
 /*!***************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/colors.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************/

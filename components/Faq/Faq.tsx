@@ -28,49 +28,59 @@ const duHacksFaq = [
   },
   {
     question: (
-      <>
-        Do I need to pay a registration fee to participate in the hackathon? 
-      </>
+      <>Do I need to pay a registration fee to participate in the hackathon?</>
     ),
     answer: (
       <>
-        No. There is no registration fee for participating in the hackathon. This approach ensures that creativity and innovation can flourish without restrictions, allowing participants to immerse themselves in a collaborative and dynamic environment.🌐✨
+        No. There is no registration fee for participating in the hackathon.
+        This approach ensures that creativity and innovation can flourish
+        without restrictions, allowing participants to immerse themselves in a
+        collaborative and dynamic environment.🌐✨
       </>
     ),
   },
   {
     question: (
       <>
-        As the hackathon is in hybrid mode, who is allowed to participate in offline mode? 
+        As the hackathon is in hybrid mode, who is allowed to participate in
+        offline mode?
       </>
     ),
     answer: (
       <>
-        Only selected students from DDU are permitted for offline participation. Participants from any other locations are not allowed.🚫
+        Only selected students from DDU are permitted for offline participation.
+        Participants from any other locations are not allowed.🚫
       </>
     ),
   },
   {
     question: (
       <>
-        For the participants in offline mode, will travel reimbursement be provided? 
+        For the participants in offline mode, will travel reimbursement be
+        provided?
       </>
     ),
     answer: (
       <>
-        No, DUHacks 3.0 does not offer travel reimbursement for participants in offline mode. Participants are responsible for their travel expenses, and we recommend planning accordingly.
+        No, DUHacks 3.0 does not offer travel reimbursement for participants in
+        offline mode. Participants are responsible for their travel expenses,
+        and we recommend planning accordingly.
       </>
     ),
   },
   {
     question: (
       <>
-        Will everyone from DDU be eligible for offline tickets, or is there a selection process? 
+        Will everyone from DDU be eligible for offline tickets, or is there a
+        selection process?
       </>
     ),
     answer: (
       <>
-        Not everyone from DDU will receive offline tickets for DUHacks3.O. The selection process involves a shortlisting of participants based on specific criteria, such as performance, engagement, and commitment. Eligible individuals will be notified in advance.😊
+        Not everyone from DDU will receive offline tickets for DUHacks3.O. The
+        selection process involves a shortlisting of participants based on
+        specific criteria, such as performance, engagement, and commitment.
+        Eligible individuals will be notified in advance.😊
       </>
     ),
   },
@@ -111,15 +121,25 @@ const duHacksFaq = [
     question: <> What if I do not have a team?🤔 </>,
     answer: (
       <>
-        We have a great community on Discord. Reach out to other
-        innovators, collaborate, communicate, and make things possible! 🤝
+        We have a great community on Discord. Reach out to other innovators,
+        collaborate, communicate, and make things possible! 🤝
       </>
     ),
   },
   {
     question: <>Have more questions? 🤔</>,
-    answer: <>Feel free to write to us at gdsc@ddu.ac.in or create a ticket🎫 on <a className="text-blue-400 underline" href="https://discord.gg/T2fzD8c2j2" target="_blank">discord</a>
-    </>,
+    answer: (
+      <>
+        Feel free to write to us at gdsc@ddu.ac.in or create a ticket🎫 on{" "}
+        <a
+          className="text-blue-400 underline"
+          href="https://discord.gg/T2fzD8c2j2"
+          target="_blank"
+        >
+          discord
+        </a>
+      </>
+    ),
   },
 ];
 
@@ -127,7 +147,7 @@ export default function FAQ() {
   return (
     <div className="mt-36 sm:mt-24" id="faq">
       <Container>
-        <div className="mt-32 flex flex-col gap-12 lg:flex-row p-10 ">
+        <div className="mt-32 flex flex-col gap-12 lg:flex-row-reverse p-10 ">
           <div className="text-center lg:w-5/12 lg:pl-12 lg:text-left  flex flex-col">
             <div className="md:my-16 my-8 text-white text-xl sm:text-2xl md:text-4xl">
               <h2 className="text-2xl font-bold text-white dark:text-white md:text-3xl lg:text-4xl font-logo">
@@ -168,14 +188,14 @@ export function Disclosures({ full = false }) {
   };
 
   return (
-    <div className="divide-y divide-zinc-200 border-y border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800">
+    <div className="divide-y divide-zinc-200 border-y border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800 hover:cursor-pointer">
       {duHacksFaq.map((item, i) => (
         <div
           key={String(i)}
           className={`mx-auto text-lg ${full ? "" : "max-w-2xl"}`}
         >
           {/* rome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-<div
+          <div
             className="flex w-full items-start justify-between py-6 text-left text-gray-400"
             onClick={() => handleToggle(i)}
           >
@@ -184,7 +204,7 @@ export function Disclosures({ full = false }) {
             </span>
             <span className="ml-6 flex h-7 items-center">
               {/* rome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
-<svg
+              <svg
                 className={`arrow-down h-6 w-6 transform duration-300 ${
                   openIndex === i ? "rotate-180" : "rotate-0"
                 }`}

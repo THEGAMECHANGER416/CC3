@@ -101,7 +101,7 @@ function TeamSection() {
         <AnimatePresence mode="wait">
           <motion.div
             key={showTeam}
-            className="flex flex-wrap justify-center items-center pt-20 gap-10 sm:px-20 lg:px-96"
+            className="flex flex-wrap justify-center items-center pt-20 gap-10 sm:px-20 lg:px-40"
             initial={{
               opacity: 0,
               x: 300,
