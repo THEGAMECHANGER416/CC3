@@ -1112,6 +1112,9 @@ video {
 .flex-grow {
   flex-grow: 1;
 }
+.grow {
+  flex-grow: 1;
+}
 .basis-1\/2 {
   flex-basis: 50%;
 }
