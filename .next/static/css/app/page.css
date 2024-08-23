@@ -2465,13 +2465,13 @@ video {
     justify-content: normal;
   }
 
-  .md\:gap-x-8 {
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
+  .md\:gap-x-10 {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
   }
 
-  .md\:gap-y-8 {
-    row-gap: 2rem;
+  .md\:gap-y-10 {
+    row-gap: 2.5rem;
   }
 
   .md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -2766,16 +2766,17 @@ video {
   width: 350px;
   height: 300px;
   border-radius: 50%;
-  background-color: rgb(120, 47, 152);
+  background-color: rgb(0, 0, 0);
   background: linear-gradient(
     343deg,
-    rgba(120, 47, 152, 1) 0%,
-    rgba(5, 50, 129, 1) 82%,
-    rgba(52, 39, 100, 1) 100%
+    rgb(254, 94, 0) 0%,
+    rgb(254, 94, 0) 82%,
+    rgb(254, 94, 0) 100%
   );
+  /* rgb(234, 0, 27) */
   filter: blur(180px);
   z-index: -1;
-  /* animation: leviation 1.5s ease-in-out infinite alternate; */ 
+  /* animation: leviation 1.5s ease-in-out infinite alternate; */
 }
 .heroContainer1::after {
   content: "";
@@ -2785,16 +2786,16 @@ video {
   width: 350px;
   height: 300px;
   border-radius: 50%;
-  background-color: rgb(120, 47, 152);
+  background-color: rgb(0, 0, 0);
   background: linear-gradient(
     343deg,
-    rgba(120, 47, 152, 1) 0%,
-    rgba(5, 50, 129, 1) 82%,
-    rgba(52, 39, 100, 1) 100%
+    rgb(121, 78, 13) 0%,
+    rgba(194, 125, 22, 0.618) 82%,
+    rgba(247, 159, 26, 0.233) 100%
   );
   filter: blur(220px);
   z-index: -1;
-  /* animation: leviation 1.5s ease-in-out infinite alternate; */ 
+  /* animation: leviation 1.5s ease-in-out infinite alternate; */
 }
 
 @keyframes leviation {
@@ -3203,7 +3204,7 @@ video {
 [hidden] {
   display: none;
 }
-    .prize-card {
+  .prize-card {
   position: relative;
   margin: 1rem;
   height: 320px;
@@ -3218,14 +3219,14 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), #27272a var(--tw-gradient-via-position), var(--tw-gradient-to);
   padding: 1px;
 }
-    @media (min-width: 1024px) {
+  @media (min-width: 1024px) {
 
   .prize-card {
     height: 480px;
     width: 340px;
   }
 }
-    @media (min-width: 1920px) {
+  @media (min-width: 1920px) {
 
   .prize-card {
     height: 500px;
@@ -3333,143 +3334,131 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-
 .prizeContainer {
-    position: relative;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
+  position: relative;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .prizeContainer .median .card {
-    position: relative;
-    /* width: 300px; */
-    /* height: 420px; */
-    background: transparent;
-    margin: 20px;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-    background: rgba(35, 35, 37, 0.43);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 2px solid rgba(39, 39, 42, 0.5);
-    backdrop-filter: blur(9.1px);
-    -webkit-backdrop-filter: blur(9.1px);
-    transition: 0.5s;
+  position: relative;
+  /* width: 300px; */
+  /* height: 420px; */
+  background: transparent;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  background: rgba(35, 35, 37, 0.43);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
+  border: 2px solid rgba(39, 39, 42, 0.5);
+  backdrop-filter: blur(9.1px);
+  -webkit-backdrop-filter: blur(9.1px);
+  transition: 0.5s;
 }
 
-
-
 .prizeContainer .median .card .circle {
-    position: relative;
-    width: 100%;
-    height: 50%;
-    background: rgb(35, 35, 35);
-    clip-path: circle(200px at center 0);
-    text-align: center;
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background: rgb(35, 35, 35);
+  clip-path: circle(200px at center 0);
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
-    .prizeContainer .median .card .circle {
-        clip-path: circle(140px at center 10px);
-    }
-    
+  .prizeContainer .median .card .circle {
+    clip-path: circle(140px at center 10px);
+  }
 }
 
 .prizeContainer .median .card .circle img {
-    /* color: #fff; */
-    /* font-size: 4.5em; */
-    /* padding: 30px 0; */
-    /* width: 10rem; */
-    margin: 0 auto;
+  /* color: #fff; */
+  /* font-size: 4.5em; */
+  /* padding: 30px 0; */
+  /* width: 10rem; */
+  margin: 0 auto;
 }
 
-.prizeContainer .median .card .content , .card .content-back {
-    position: absolute;
-    bottom: 10px;
-    /* left: 20px; */
-    left: 0px;
-    padding: 19px;
-    page-break-after: 20px;
-    text-align: center;
-    width: 100%;
-    height: 50%;
-    /* border: 2px solid #fff; */
+.prizeContainer .median .card .content,
+.card .content-back {
+  position: absolute;
+  bottom: 10px;
+  /* left: 20px; */
+  left: 0px;
+  padding: 19px;
+  page-break-after: 20px;
+  text-align: center;
+  width: 100%;
+  height: 50%;
+  /* border: 2px solid #fff; */
 }
 
-.card .content-back{
-    top : 0px;
-    left: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.card .content-back {
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-
-
-
 
 .prizeContainer .median .card .content p {
-    color: #fff;
+  color: #fff;
 }
 
-.prizeContainer .median .card .content button  {
-    /* position: absolute; */
+.prizeContainer .median .card .content button {
+  /* position: absolute; */
 
-    /* bottom: 10px; */
-    /* left: 105px; */
-    position: relative;
-    display: inline-block;
-    /* padding: 8px 10px; */
-    background: #000;
-    color: #fff;    
-    font-size: small;
-    border-radius: 20px;
-    text-decoration: none;
-    /* margin-top: 10px; */
+  /* bottom: 10px; */
+  /* left: 105px; */
+  position: relative;
+  display: inline-block;
+  /* padding: 8px 10px; */
+  background: rgb(254, 94, 0, 0.8);
+  color: #fff;
+  font-size: small;
+  border-radius: 20px;
+  text-decoration: none;
+  /* margin-top: 10px; */
 }
 
- .content-back-btn button {
-    /* padding: 8px 10px; */
-    background: #000;
-    color: #fff;    
-    font-size: small;
-    border-radius: 20px;
-    text-decoration: none;
-    margin-top: 10px;
+.content-back-btn button {
+  /* padding: 8px 10px; */
+  background: #000;
+  color: #fff;
+  font-size: small;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 10px;
 }
-
 
 @media screen and (max-width: 767px) {
-    .prizeContainer .median .card .circle {
-        clip-path: circle(180px at center -50px);
-    }
+  .prizeContainer .median .card .circle {
+    clip-path: circle(180px at center -50px);
+  }
 
-    .prizeContainer .median .card .content {
-        padding: 10px;
-    }
+  .prizeContainer .median .card .content {
+    padding: 10px;
+  }
 }
-
 
 /* Card.css */
 .card {
-    transition: transform 1s ease;
-  }
-  
-  .card-front {
-    /* Front of the card styles */
-    transform: rotateY(-180deg);
+  transition: transform 1s ease;
+}
 
-  }
-  
-  .card-back {
-    /* Back of the card styles */
-    transform: rotateY(180deg);
-  }
-  
+.card-front {
+  /* Front of the card styles */
+  transform: rotateY(-180deg);
+}
+
+.card-back {
+  /* Back of the card styles */
+  transform: rotateY(180deg);
+}
 
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/prizes/background.css ***!
@@ -3563,18 +3552,23 @@ video {
   position: relative;
   /* width: 500px; */
   /* height: 420px; */
-  margin: auto; 
+  margin: auto;
 }
 .faqContainer1::before {
   content: "";
   position: absolute;
-  top: 10%; 
+  top: 10%;
   left: 3%;
   width: 450px;
   height: 300px;
   border-radius: 50%;
-  background-color: rgb(120, 47, 152);
-  background: linear-gradient(343deg, rgba(120, 47, 152, 1) 0%, rgba(5, 50, 129, 1) 82%, rgba(52, 39, 100, 1) 100%);
+  background-color: rgb(0, 0, 0);
+  background: linear-gradient(
+    343deg,
+    rgb(254, 94, 0) 0%,
+    rgb(44, 17, 1) 82%,
+    rgb(254, 94, 0) 100%
+  );
   filter: blur(200px);
   z-index: -1;
   /* animation: leviation 1.5s ease-in-out infinite alternate; */
@@ -3588,7 +3582,6 @@ video {
     transform: translate(0px, 20px);
   }
 }
-
 
 /* .faqContainer1::after {
   content: "";
@@ -3604,82 +3597,83 @@ video {
   z-index: -1;
 } */
 
-
-
 /*!***************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/themes.css ***!
   \***************************************************************************************************************************************************************************************************************************************************************/
 .container {
-      position: relative;
-      width: 1150px;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-
+  position: relative;
+  width: 1150px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .container .card {
-      position: relative;
-      width: 300px;
-      height: 420px;
-      background: #fff;
-      margin: 20px;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-      transition: 0.5s;
+  position: relative;
+  width: 300px;
+  height: 420px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0) 0px 52px 50px;
+  transition: 0.5s;
 }
 
 .container:hover .card {
-      filter: blur(20px);
-      transform: scale(0.9);
-      opacity: 0.5;
+  filter: blur(20px);
+  transform: scale(0.9);
+  opacity: 0.5;
 }
 
 .container .card:hover {
-      filter: blur(0px);
-      transform: scale(1.1);
-      opacity: 1;
+  filter: blur(0px);
+  transform: scale(1.1);
+  opacity: 1;
 }
 
 .container .card .circle {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      background: #000;
-      clip-path: circle(180px at center 0);
-      text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  clip-path: circle(180px at center 0);
+  text-align: center;
 }
 
 .container .card .circle h2 {
-      color: #fff;
-      font-size: 4.5em;
-      padding: 30px 0;
+  color: #fff;
+  font-size: 4.5em;
+  padding: 30px 0;
 }
 
 .container .card .content {
-      position: absolute;
-      bottom: 10px;
-      padding: 20px;
-      page-break-after: 20px;
-      text-align: center;
+  position: absolute;
+  bottom: 10px;
+  padding: 20px;
+  page-break-after: 20px;
+  text-align: center;
 }
 
 .container .card .content p {
-      color: #666;
+  color: #666;
 }
 
 .container .card .content a {
-      position: relative;
-      display: inline-block;
-      padding: 10px 20px;
-      background: #000;
-      color: #fff;
-      border-radius: 40px;
-      text-decoration: none;
-      margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.theme_css:hover {
+  background-color: rgb(234, 0, 27, 0.5);
 }
 
 /* .container .card:nth-child(1) .circle,
@@ -3696,6 +3690,7 @@ video {
 .container .card:nth-child(3) .content a {
       background: #bb02ff;
 } */
+
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/themes/background.css ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
@@ -3703,18 +3698,23 @@ video {
   position: relative;
   /* width: 500px; */
   /* height: 420px; */
-  margin: auto; 
+  margin: auto;
 }
 .themeContainer1::before {
   content: "";
   position: absolute;
-  top: 250px; 
+  top: 250px;
   left: 100%;
   width: 450px;
   height: 300px;
   border-radius: 50%;
-  background-color: rgb(120, 47, 152);
-  background: linear-gradient(343deg, rgba(120, 47, 152, 1) 0%, rgba(5, 50, 129, 1) 82%, rgba(52, 39, 100, 1) 100%);
+  background-color: rgb(0, 0, 0);
+  background: linear-gradient(
+    343deg,
+    rgb(119, 44, 0) 0%,
+    rgb(254, 94, 0) 82%,
+    rgb(254, 94, 0) 100%
+  );
   filter: blur(240px);
   z-index: -10;
 }
@@ -3722,18 +3722,21 @@ video {
 .themeContainer1::after {
   content: "";
   position: absolute;
-  top: 280px; 
+  top: 280px;
   left: -70%;
   width: 650px;
   height: 200px;
   border-radius: 50%;
-  background-color: rgb(120, 47, 152);
-  background: linear-gradient(343deg, rgba(120, 47, 152, 1) 0%, rgba(5, 50, 129, 1) 82%, rgba(52, 39, 100, 1) 100%);
+  background-color: rgb(0, 0, 0);
+  background: linear-gradient(
+    343deg,
+    rgb(119, 44, 0) 0%,
+    rgb(254, 94, 0) 82%,
+    rgb(254, 94, 0) 100%
+  );
   filter: blur(240px);
   z-index: -10;
 }
-
-
 
 /*!************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/team/background.css ***!
@@ -3747,13 +3750,18 @@ video {
 .teamContainer1::before {
   content: "";
   position: absolute;
-  top: 120px; 
+  top: 120px;
   left: -400px;
   width: 1350px;
   height: 200px;
   border-radius: 50%;
-  background-color: rgb(120, 47, 152);
-  background: linear-gradient(343deg, rgba(120, 47, 152, 1) 0%, rgba(5, 50, 129, 1) 82%, rgba(52, 39, 100, 1) 100%);
+  background-color: rgb(0, 0, 0);
+  background: linear-gradient(
+    343deg,
+    rgb(254, 94, 0) 0%,
+    rgb(44, 17, 1) 82%,
+    rgb(254, 94, 0) 100%
+  );
   filter: blur(300px);
   z-index: -1;
 }
@@ -3772,24 +3780,19 @@ video {
   z-index: -1;
 } */
 
- 
 @media screen and (max-width: 768px) {
-  .teamContainer1::after{
-    right: 0; 
+  .teamContainer1::after {
+    right: 0;
     left: 0;
-
   }
-  .teamContainer1::before{
-    width:400px;
+  .teamContainer1::before {
+    width: 400px;
     height: 300px;
-    right: 220px; 
+    right: 220px;
     left: 0;
     filter: blur(180px);
-
   }
 }
-
-
 
 /*!******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./components/Timeline/timeline.css ***!
@@ -3813,12 +3816,11 @@ video {
   width: 50%;
   border: solid;
   border-image-slice: 1;
-  transition: border-color 1s ease, width 1s ease; 
-
+  transition: border-color 1s ease, width 1s ease;
 }
 
 .box.active::before {
-  border-color: #d946ef; 
+  border-color: #ea001b;
   width: 50%;
   /* animation : fillBorder 1s ease; */
 }
@@ -3829,7 +3831,7 @@ video {
   bottom: -7.5px;
   border-width: 10px 0 10px 10px;
   border-radius: 50px 0 0 50px;
-  border-right: 0; 
+  border-right: 0;
   animation-name: fillBorderRight;
 }
 
@@ -3839,11 +3841,9 @@ video {
   bottom: -5px;
   border-width: 10px 10px 10px 0;
   border-radius: 0 50px 50px 0;
-  border-left: 0; 
+  border-left: 0;
   animation-name: fillBorderLeft;
 }
-
-
 
 @keyframes fillBorder {
   25% {
@@ -3868,7 +3868,7 @@ video {
     width: 20%;
   }
   75% {
-    width: 50%; 
+    width: 50%;
   }
   100% {
     width: 50%;
@@ -3883,7 +3883,7 @@ video {
     width: 50%;
   }
   75% {
-    width: 50%; 
+    width: 50%;
   }
   100% {
     width: 50%;
@@ -3905,86 +3905,79 @@ video {
   border-bottom-right-radius: 0;
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgb(25, 25, 28);
+  border: 2px solid rgba(43, 43, 43, 0.765);
+  border-radius: 16px;
+  background: rgba(39, 39, 42, 0.43);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(39, 39, 42, 0.5);
+  backdrop-filter: blur(9.1px);
+  -webkit-backdrop-filter: blur(9.1px);
+  width: 420px;
+}
+
+@media screen and (max-width: 728px) {
   .info {
-    display: flex;
-    flex-direction: column;
-    color: rgb(255, 255, 255);
-    padding: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    background:  rgb(25, 25, 28);
-    border: 2px solid rgba(43, 43, 43, 0.765);
-    border-radius: 16px;
-    background: rgba(39, 39, 42, 0.43);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 2px solid rgba(39, 39, 42, 0.5);
-    backdrop-filter: blur(9.1px);
-    -webkit-backdrop-filter: blur(9.1px);
-    width: 420px;
-    
+    width: 100%;
   }
+}
 
-  @media screen and (max-width: 728px) {
-    .info {
-        width: 100%;
-    }
-    
-  }
+.title {
+  color: #f79f1a;
+  position: relative;
+  font-size: 21px;
+}
 
+.box::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 999px;
+  border: 8px solid #ea001b;
+  transition: all 0.5s ease;
+}
 
-  
-  .title {
-    color: #f0abfc;
-    position: relative;
-    font-size: 21px;
-  }
-  
-  .box::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background: white;
-    border-radius: 999px;
-    border: 8px solid #d946ef;
-    transition: all 0.5s ease;
-  }
+.box.active-card::after {
+  background: #ea001b;
+  border-color: white;
+  scale: 1.5;
+}
 
-  .box.active-card::after {
-    background: #d946ef;
-    border-color: white;
-    scale: 1.5;
-  }
+.box:nth-child(even) .title {
+  text-align: right;
+}
 
-  
-  .box:nth-child(even) .title {
-    text-align: right;
-  }
+.box:nth-child(even) .data {
+  text-align: right;
+}
 
-  .box:nth-child(even) .data {
-    text-align: right;
-  }
-  
-  .box:nth-child(odd)::after {
-    left: -10px;
-    top:  85px
-  }
-  
-  .box:nth-child(even)::after {
-    right: -10px;
-    top:  85px
-  }
-  
+.box:nth-child(odd)::after {
+  left: -10px;
+  top: 85px;
+}
 
-  @media (min-width: 768px) {
-    .timeline {
-      max-width: 1000px; 
-    }
-  }
+.box:nth-child(even)::after {
+  right: -10px;
+  top: 85px;
+}
 
-  
+@media (min-width: 768px) {
+  .timeline {
+    max-width: 1000px;
+  }
+}
+
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/timeline/background.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************/
@@ -4004,12 +3997,16 @@ video {
   width: 650px;
   height: 800px;
   border-radius: 50%;
-  background-color: rgb(120, 47, 152);
-  background: linear-gradient(343deg, rgba(120, 47, 152, 1) 0%, rgba(5, 50, 129, 1) 82%, rgba(52, 39, 100, 1) 100%);
+  background-color: rgb(0, 0, 0);
+  background: linear-gradient(
+    343deg,
+    rgb(254, 94, 0) 0%,
+    rgb(44, 17, 1) 82%,
+    rgb(254, 94, 0) 100%
+  );
   filter: blur(350px);
   z-index: -1;
 }
-
 
 .timelineContainer1::after {
   content: "";
@@ -4019,14 +4016,16 @@ video {
   width: 650px;
   height: 800px;
   border-radius: 50%;
-  background-color: rgb(120, 47, 152);
-  background: linear-gradient(343deg, rgba(120, 47, 152, 1) 0%, rgba(5, 50, 129, 1) 82%, rgba(52, 39, 100, 1) 100%);
+  background-color: rgb(0, 0, 0);
+  background: linear-gradient(
+    343deg,
+    rgb(254, 94, 0) 0%,
+    rgb(41, 15, 0) 82%,
+    rgb(254, 94, 0) 100%
+  );
   filter: blur(350px);
   z-index: -1;
 }
-
-
-
 
 @media screen and (max-width: 768px) {
   .timelineContainer1::after {
@@ -4036,82 +4035,14 @@ video {
     left: 0px;
     filter: blur(100px);
     /* rotate: 90deg; */
-
-
   }
 
   .timelineContainer1::before {
     top: 0px;
     width: 0px;
-
   }
-
 }
-/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/tweet/background.css ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************/
-.tweetContainer1 {
-    position: relative;
-    /* width: 500px; */
-    /* height: 420px; */
-    /* margin: auto;  */
-  }
-  .tweetContainer1::before {
-    content: "";
-    position: absolute;
-    top: 25%; 
-    left: -30%;
-    width: 1850px;
-    height: 300px;
-    border-radius: 50%;
-    background-color: rgb(120, 47, 152);
-    background: linear-gradient(343deg, rgba(120, 47, 152, 1) 0%, rgba(5, 50, 129, 1) 82%, rgba(52, 39, 100, 1) 100%);
-    filter: blur(400px);
-    z-index: -1;
-  }
 
-
-  @media screen and (max-width: 768px) {
-    .tweetContainer1::before{
-      height: 500px; 
-      width: 400px;
-      top: 0%;
-      left: -10%;
-
-      filter: blur(200px);
-  
-    }
-  
-  }
-/*   
-  .tweetContainer1::after {
-    content: "";
-    position: absolute;
-    top: 300px; 
-    left: 80%;
-    width:150px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: rgb(120, 47, 152);
-    background: linear-gradient(343deg, rgba(120, 47, 152, 1) 0%, rgba(5, 50, 129, 1) 82%, rgba(52, 39, 100, 1) 100%);
-    filter: blur(70px);
-    z-index: -1;
-  }
-   */
-   
-  /* @media screen and (max-width: 768px) {
-    .tweetContainer1::after{
-      top: 500px; 
-  
-    }
-    .tweetContainer1::before{
-      top: 500px; 
-  
-    }
-  }
-   */
-  
-  
 /*!********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/about/about.css ***!
   \********************************************************************************************************************************************************************************************************************************************************************/
@@ -4141,12 +4072,12 @@ video {
   width: 550px;
   height: 300px;
   border-radius: 50%;
-  background-color: rgb(120, 47, 152);
+  background-color: rgb(0, 0, 0);
   background: linear-gradient(
     343deg,
-    rgba(120, 47, 152, 1) 0%,
-    rgba(5, 50, 129, 1) 82%,
-    rgba(52, 39, 100, 1) 100%
+    rgb(234, 0, 27) 0%,
+    rgb(46, 24, 26) 82%,
+    rgb(234, 0, 27) 100%
   );
   filter: blur(440px);
   z-index: -1;
@@ -4161,18 +4092,18 @@ video {
   width: 550px;
   height: 300px;
   border-radius: 50%;
-  background-color: rgb(120, 47, 152);
+  background-color: rgb(0, 0, 0);
   background: linear-gradient(
     343deg,
-    rgba(120, 47, 152, 1) 0%,
-    rgba(5, 50, 129, 1) 82%,
-    rgba(52, 39, 100, 1) 100%
+    rgb(234, 0, 27) 0%,
+    rgb(46, 24, 26) 82%,
+    rgb(234, 0, 27) 100%
   );
   filter: blur(460px);
   z-index: -1;
   /* animation: leviation 2s ease-in-out infinite alternate; */
 }
-
+/* rgb(254, 94, 0) */
 /* animation: leviation 2s ease-in-out infinite alternate; */
 
 @keyframes leviation {
@@ -4188,159 +4119,172 @@ video {
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./components/SponsorsSection/sponsorTilt.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************/
 .hover-effect-emerald:hover {
-    background: rgba(5, 150, 105, 0.37);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    /* border: 1px solid rgba(5, 150, 105, 0.3); */
+  background: rgba(5, 150, 105, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  /* border: 1px solid rgba(5, 150, 105, 0.3); */
 }
 
 .hover-effect-diamond:hover {
-    background: rgba(6, 182, 212, 0.35);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    /* border: 1px solid rgba(6, 182, 212, 0.3); */ 
+  background: rgba(6, 182, 212, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  /* border: 1px solid rgba(6, 182, 212, 0.3); */
 }
 
 .hover-effect-gold:hover {
-    background: rgba(202, 138, 4, 0.37);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    /* border: 1px solid rgba(202, 138, 4, 0.3); */
+  background: rgb(247, 159, 26, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  /* border: 1px solid rgba(202, 138, 4, 0.3); */
 }
 
 .hover-effect-silver:hover {
-    background: rgba(161, 161, 170, 0.37);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    /* border: 1px solid rgba(161, 161, 170, 0.3); */
+  background: rgba(161, 161, 170, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  /* border: 1px solid rgba(161, 161, 170, 0.3); */
 }
 
 .hover-effect-bronze:hover {
-    background: rgba(113, 63, 18, 0.37);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    /* border: 1px solid rgba(113, 63, 18, 0.3); */
+  background: rgba(113, 63, 18, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  /* border: 1px solid rgba(113, 63, 18, 0.3); */
 }
 
 .hover-effect-event:hover {
-    background: rgba(126, 1, 138, 0.37);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    /* border: 1px solid rgba(113, 63, 18, 0.3); */
+  background: rgb(234, 0, 27, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  /* border: 1px solid rgba(113, 63, 18, 0.3); */
 }
 
 .title-platinum {
-    background: rgba(5, 150, 105, 0.37);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    border: 1px solid rgba(5, 150, 105, 0.3);
+  background: rgba(5, 150, 105, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border: 1px solid rgba(5, 150, 105, 0.3);
 }
 
 .title-diamond {
-    background: rgba(6, 182, 212, 0.35);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    border: 1px solid rgba(6, 182, 212, 0.3);
+  background: rgba(6, 182, 212, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border: 1px solid rgba(6, 182, 212, 0.3);
 }
 
 .title-gold {
-    background: rgba(202, 138, 4, 0.37);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    border: 1px solid rgba(202, 138, 4, 0.3);
+  background: rgb(247, 159, 26, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border: 1px solid rgb(247, 159, 26, 0.5);
 }
 
 .title-silver {
-    background: rgba(161, 161, 170, 0.37);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    border: 1px solid rgba(161, 161, 170, 0.3);
+  background: rgba(161, 161, 170, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border: 1px solid rgba(161, 161, 170, 0.3);
 }
 
 .title-event {
-    background: #dd00ff2d;
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    border: 1px solid #ff00bf2d;
+  background: rgb(234, 0, 27, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border: 1px solid rgb(234, 0, 27, 0.5);
 }
 
 .title-bronze {
-    background: rgba(113, 63, 18, 0.37);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    border: 1px solid rgba(113, 63, 18, 0.3);
+  background: rgba(113, 63, 18, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border: 1px solid rgba(113, 63, 18, 0.3);
+}
+
+.sponsor_css {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  background: rgba(35, 35, 37, 0.43);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
 }
 
 /*!****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./styles/sponsors/background.css ***!
   \****************************************************************************************************************************************************************************************************************************************************************************/
 .sponsorContainer1 {
-    position: relative;
-    /* width: 500px; */
-    /* height: 420px; */
-    margin: auto; 
-  }
+  position: relative;
+  /* width: 500px; */
+  /* height: 420px; */
+  margin: auto;
+}
 .sponsorContainer1::before {
-    content: "";
-    position: absolute;
-    top: 300px; 
-    left: -10%;
-    width: 2550px;
-    height: 200px;
-    border-radius: 20%;
-    background-color: rgb(120, 47, 152);
-    background: linear-gradient(343deg, rgba(120, 47, 152, 1) 0%, rgba(5, 50, 129, 1) 82%, rgba(52, 39, 100, 1) 100%);
-    filter: blur(300px);
-    z-index: -1;
-  }
+  content: "";
+  position: absolute;
+  top: 300px;
+  left: -10%;
+  width: 2550px;
+  height: 200px;
+  border-radius: 20%;
+  background-color: rgb(0, 0, 0);
+  background: linear-gradient(
+    343deg,
+    rgb(254, 94, 0) 0%,
+    rgb(44, 17, 1) 82%,
+    rgb(254, 94, 0) 100%
+  );
+  filter: blur(300px);
+  z-index: -1;
+}
 
+.sponsorContainer1::after {
+  content: "";
+  position: absolute;
+  top: 190px;
+  left: 30%;
+  width: 950px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  background: linear-gradient(
+    343deg,
+    rgb(254, 94, 0) 0%,
+    rgb(44, 17, 1) 82%,
+    rgb(254, 94, 0) 100%
+  );
+  filter: blur(360px);
+  z-index: -1;
+}
 
-/* .sponsorContainer1::after {
-    content: "";
-    position: absolute;
-    top: 190px; 
-    left: 30%;
-    width: 950px;
-    height: 300px;
-    border-radius: 50%;
-    background-color: rgb(120, 47, 152);
-    background: linear-gradient(343deg, rgba(120, 47, 152, 1) 0%, rgba(5, 50, 129, 1) 82%, rgba(52, 39, 100, 1) 100%);
-    filter: blur(360px);
-    z-index: -1;
-  } */
-  
-  
-  
 .sponsorContainer2 {
-    position: relative;
-    /* width: 500px; */
-    /* height: 420px; */
-    margin: auto; 
-  }
+  position: relative;
+  /* width: 500px; */
+  /* height: 420px; */
+  margin: auto;
+}
 
 /* 
 .sponsorContainer2::before {
@@ -4357,5 +4301,4 @@ video {
     z-index: -1;
   }
    */
-  
-  
+
