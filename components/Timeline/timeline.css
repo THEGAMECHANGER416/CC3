@@ -17,12 +17,11 @@
   width: 50%;
   border: solid;
   border-image-slice: 1;
-  transition: border-color 1s ease, width 1s ease; 
-
+  transition: border-color 1s ease, width 1s ease;
 }
 
 .box.active::before {
-  border-color: #d946ef; 
+  border-color: #ea001b;
   width: 50%;
   /* animation : fillBorder 1s ease; */
 }
@@ -33,7 +32,7 @@
   bottom: -7.5px;
   border-width: 10px 0 10px 10px;
   border-radius: 50px 0 0 50px;
-  border-right: 0; 
+  border-right: 0;
   animation-name: fillBorderRight;
 }
 
@@ -43,11 +42,9 @@
   bottom: -5px;
   border-width: 10px 10px 10px 0;
   border-radius: 0 50px 50px 0;
-  border-left: 0; 
+  border-left: 0;
   animation-name: fillBorderLeft;
 }
-
-
 
 @keyframes fillBorder {
   25% {
@@ -72,7 +69,7 @@
     width: 20%;
   }
   75% {
-    width: 50%; 
+    width: 50%;
   }
   100% {
     width: 50%;
@@ -87,7 +84,7 @@
     width: 50%;
   }
   75% {
-    width: 50%; 
+    width: 50%;
   }
   100% {
     width: 50%;
@@ -109,84 +106,76 @@
   border-bottom-right-radius: 0;
 }
 
+.info {
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgb(25, 25, 28);
+  border: 2px solid rgba(43, 43, 43, 0.765);
+  border-radius: 16px;
+  background: rgba(39, 39, 42, 0.43);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(39, 39, 42, 0.5);
+  backdrop-filter: blur(9.1px);
+  -webkit-backdrop-filter: blur(9.1px);
+  width: 420px;
+}
+
+@media screen and (max-width: 728px) {
   .info {
-    display: flex;
-    flex-direction: column;
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    padding: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    background:  rgb(25, 25, 28);
-    border: 2px solid rgba(43, 43, 43, 0.765);
-    border-radius: 16px;
-    background: rgba(39, 39, 42, 0.43);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 2px solid rgba(39, 39, 42, 0.5);
-    backdrop-filter: blur(9.1px);
-    -webkit-backdrop-filter: blur(9.1px);
-    width: 420px;
-    
+    width: 100%;
   }
+}
 
-  @media screen and (max-width: 728px) {
-    .info {
-        width: 100%;
-    }
-    
-  }
+.title {
+  color: #f79f1a;
+  position: relative;
+  font-size: 21px;
+}
 
+.box::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 999px;
+  border: 8px solid #ea001b;
+  transition: all 0.5s ease;
+}
 
-  
-  .title {
-    color: #f0abfc;
-    position: relative;
-    font-size: 21px;
-  }
-  
-  .box::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background: white;
-    border-radius: 999px;
-    border: 8px solid #d946ef;
-    transition: all 0.5s ease;
-  }
+.box.active-card::after {
+  background: #ea001b;
+  border-color: white;
+  scale: 1.5;
+}
 
-  .box.active-card::after {
-    background: #d946ef;
-    border-color: white;
-    scale: 1.5;
-  }
+.box:nth-child(even) .title {
+  text-align: right;
+}
 
-  
-  .box:nth-child(even) .title {
-    text-align: right;
-  }
+.box:nth-child(even) .data {
+  text-align: right;
+}
 
-  .box:nth-child(even) .data {
-    text-align: right;
-  }
-  
-  .box:nth-child(odd)::after {
-    left: -10px;
-    top:  85px
-  }
-  
-  .box:nth-child(even)::after {
-    right: -10px;
-    top:  85px
-  }
-  
+.box:nth-child(odd)::after {
+  left: -10px;
+  top: 85px;
+}
 
-  @media (min-width: 768px) {
-    .timeline {
-      max-width: 1000px; 
-    }
-  }
+.box:nth-child(even)::after {
+  right: -10px;
+  top: 85px;
+}
 
-  
+@media (min-width: 768px) {
+  .timeline {
+    max-width: 1000px;
+  }
+}

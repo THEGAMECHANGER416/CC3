@@ -37,7 +37,7 @@ export default function Home() {
       setActiveSection("home");
     } else if (scrollPosition >= about && scrollPosition < themes) {
       setActiveSection("about");
-    } else if (scrollPosition >= themes && scrollPosition < schedule) { 
+    } else if (scrollPosition >= themes && scrollPosition < schedule) {
       setActiveSection("themes");
     } else if (scrollPosition >= schedule && scrollPosition < sponsors) {
       setActiveSection("schedule");
@@ -98,7 +98,7 @@ export default function Home() {
   return (
     <main className="overflow-x-hidden bg-grey-900">
       {/* <LoadingScreen/> */}
-      <Navbar activeSection={activeSection}/>
+      <Navbar activeSection={activeSection} />
       {/* <div className="bg-black bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 "> */}
       {/* <PreLoader /> */}
       {/* <FlareCursor /> */}
@@ -125,7 +125,7 @@ export default function Home() {
       <div id="sponsors">
         <br />
         {/* <SponsorsSection /> */}
-        <SponsorsSection2/>
+        <SponsorsSection2 />
       </div>
 
       <div id="prizes">
@@ -137,8 +137,6 @@ export default function Home() {
         <br />
         <TeamSection />
       </div>
-
-      <TweetFeed />
 
       <div id="faq">
         <br />

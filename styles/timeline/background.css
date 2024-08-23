@@ -14,12 +14,16 @@
   width: 650px;
   height: 800px;
   border-radius: 50%;
-  background-color: rgb(120, 47, 152);
-  background: linear-gradient(343deg, rgba(120, 47, 152, 1) 0%, rgba(5, 50, 129, 1) 82%, rgba(52, 39, 100, 1) 100%);
+  background-color: rgb(0, 0, 0);
+  background: linear-gradient(
+    343deg,
+    rgb(254, 94, 0) 0%,
+    rgb(44, 17, 1) 82%,
+    rgb(254, 94, 0) 100%
+  );
   filter: blur(350px);
   z-index: -1;
 }
-
 
 .timelineContainer1::after {
   content: "";
@@ -29,14 +33,17 @@
   width: 650px;
   height: 800px;
   border-radius: 50%;
-  background-color: rgb(120, 47, 152);
-  background: linear-gradient(343deg, rgba(120, 47, 152, 1) 0%, rgba(5, 50, 129, 1) 82%, rgba(52, 39, 100, 1) 100%);
+  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  background: linear-gradient(
+    343deg,
+    rgb(254, 94, 0) 0%,
+    rgb(41, 15, 0) 82%,
+    rgb(254, 94, 0) 100%
+  );
   filter: blur(350px);
   z-index: -1;
 }
-
-
-
 
 @media screen and (max-width: 768px) {
   .timelineContainer1::after {
@@ -46,14 +53,10 @@
     left: 0px;
     filter: blur(100px);
     /* rotate: 90deg; */
-
-
   }
 
   .timelineContainer1::before {
     top: 0px;
     width: 0px;
-
   }
-
 }

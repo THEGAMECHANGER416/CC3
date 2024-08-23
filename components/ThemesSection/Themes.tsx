@@ -73,7 +73,7 @@ export default function Themes() {
         </div>
       </div> */}
       <div className="flex justify-center mt-28 ">
-        <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 md:gap-x-8 md:gap-y-8 gap-3    themeContainer1">
+        <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 md:gap-x-10 md:gap-y-10 gap-3    themeContainer1">
           {[...themes].map(({ title, image }) => (
             <div className="max-w-md mx-auto  md:w-64 md:h-full sm:w-44 w-40 h-full  overflow-hidden ">
               <Card
@@ -84,8 +84,8 @@ export default function Themes() {
                     src={image}
                     alt={title}
                     width={80}
-            height={80}
-            objectFit="cover"
+                    height={80}
+                    objectFit="cover"
                     className="md:w-[10rem] md:h-[10rem] w-[15rem] h-[rem] "
                   />
                 }
@@ -107,7 +107,7 @@ function Card(props: any) {
       glareEnable
       tiltAngleYInitial={0}
       glareMaxOpacity={0.1}
-      className="fix-safari-tilt relative overflow-hidden rounded-2xl glassy-effect p-px "
+      className="fix-safari-tilt relative overflow-hidden rounded-full glassy-effect p-px theme_css"
     >
       <div className="relative flex md:h-64 h-48 flex-col gap-3 rounded-2xl  p-7 ">
         <div className="flex items-center justify-center">{icon}</div>

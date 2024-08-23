@@ -10,9 +10,9 @@ function Card({ member }: any) {
       glareEnable
       tiltAngleYInitial={0}
       glareMaxOpacity={0.1}
-      className="fix-safari-tilt relative sm:w-64 w-40 overflow-hidden rounded-2xl "
+      className="fix-safari-tilt relative sm:w-64 w-40 overflow-hidden  rounded-2xl "
     >
-      <div className="relative flex h-full flex-col gap-6 rounded-2xl sm:p-8 p-4 glassy-div ">
+      <div className="relative flex h-full flex-col gap-6 rounded-2xl sm:p-8 p-4 glassy-div sponsor_css ">
         <div className="flex items-center justify-center">
           {" "}
           <Image
