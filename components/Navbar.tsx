@@ -68,17 +68,10 @@ const Navbar = (activeSection: any) => {
         <div className="sm:pl-7 mr-auto">
           <a href="#top">
             <img
-<<<<<<< Updated upstream
-              src="/assets/images/codeCubicle.jpg"
-              alt="DU Hacks"
-              width={50}
-              height={50}
-=======
               src="/assets/images/CodeCubicle.svg"
               alt="Code Cubicle Logo"
               width={70}
               height={70}
->>>>>>> Stashed changes
             />
           </a>
         </div>

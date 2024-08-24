@@ -11,30 +11,17 @@ function Card({ member }: any) {
       glareEnable
       tiltAngleYInitial={0}
       glareMaxOpacity={0.1}
-<<<<<<< Updated upstream
-      className="fix-safari-tilt relative  w-80 overflow-hidden  rounded-2xl "
-=======
       className="fix-safari-tilt relative w-80 overflow-hidden rounded-2xl"
->>>>>>> Stashed changes
     >
       <div className="relative flex h-full flex-col gap-6 rounded-2xl sm:p-8 p-4 glassy-div sponsor_css">
         <div className="flex items-center justify-center">
           <Image
-<<<<<<< Updated upstream
-            className="h-full rounded-2xl"
-            src={member.image}
-            width={200}
-            height={200}
-            objectFit="cover"
-            alt="member image"
-=======
             className="rounded-2xl"
             src={member.image}
             alt="Member Image"
             width={200}
             height={200}
             style={{ objectFit: "cover", width: "200px", height: "200px" }}
->>>>>>> Stashed changes
           />
         </div>
 
