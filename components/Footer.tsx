@@ -16,11 +16,9 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   const SOCIALS = {
     instagram: "https://www.instagram.com/code_cubicle_3.0/?hl=en",
-    discord: "https://discord.com/invite/gyHAqqkr",
+    twitter: "https://x.com/geek__room_",
     linkedin: "https://www.linkedin.com/company/geekroom-codecubicle/",
-    twitter: "https://twitter.com/DuHacks?t=CPjNJmQX1JxhIHb_YI0Tuw&s=09",
-    email: "codecubicle24@gmail.com",
-    mail: "contact@duhacks.tech",
+    mail: "codecubicle24@gmail.com",
   };
 
   return (
@@ -29,16 +27,11 @@ const Footer = () => {
         <div className="lg:hidden flex justify-center mb-7 font-bold"/>
       
         <div className="flex justify-center text-sm lg:text-3xl space-x-4 mb-9">
-          <a href="https://discord.com/invite/gyHAqqkr">
-            <span className="sr-only">Discord</span>
-           <FaDiscord/>
-          </a>
-          <div className=" border-r-2 transform rotate-12 " />
-          {/* <a href="https://twitter.com/DuHacks">
+          <a href="https://x.com/geek__room_">
             <span className="sr-only">Twitter</span>
             <FaXTwitter/>
 
-          </a> */}
+          </a>
           <div className=" border-r-2 transform rotate-12" />
 
           <a href="https://www.linkedin.com/company/geekroom-codecubicle/">
@@ -46,12 +39,6 @@ const Footer = () => {
             <FaLinkedinIn/>
 
           </a>
-          <div className=" border-r-2 transform rotate-12" />
-
-          {/* <a href="https://www.youtube.com/@duhacks9111">
-            <span className="sr-only">YouTube</span>
-            <FaYoutube/>
-          </a> */}
           <div className=" border-r-2 transform rotate-12" />
 
           <a href="https://www.instagram.com/code_cubicle_3.0/?hl=en">
@@ -65,17 +52,9 @@ const Footer = () => {
             <a  href="mailto:codecubicle24@gmail.com">
                 Contact Us
             </a>
-             <a href="https://discord.com/invite/gyHAqqkr" target="_blank" rel="noreferrer">Join Discord</a>
-            </div>
-            <div className="flex justify-center">
-              <img
-                src="/assets/images/dsc.png"
-                alt="DSC"
-                className="w-44 lg:w-56"
-              />
             </div>
             <div className="mx-5 lg:mx-0 text-center">
-              Copyrights © 2023. All rights reserved by Code Cubicle 3.0
+              Copyrights © 2024. All rights reserved by Code Cubicle 3.0
             </div>
           </div>
         </div>

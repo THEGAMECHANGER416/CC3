@@ -33,7 +33,7 @@ const CountdownTimer = () => {
   };
 
   useEffect(() => {
-    const endDate = new Date("2024-02-24T00:00:00"); // Change this to the date of event
+    const endDate = new Date("2024-09-21T09:00:00+05:30");
 
     const intervalId = setInterval(() => {
       calculateTimeRemaining(endDate);

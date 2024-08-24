@@ -63,7 +63,7 @@ const cardContents = [
   {
     texts: [
       "Even if you didn’t win a prize, your participation has been truly valuable",
-      "You will receive a <span class='font-semibold  text-blue-500'>certificate</span> of participation to recognize your effort and the experience gained during the hackathon.",
+      "You will receive a <span class='font-semibold  text-blue-500'>certificate</span> of participation to recognize your effort during the hackathon.",
     ],
     textsBack: [
       "To All participants one - month free Verbwire Starter Subscription",
