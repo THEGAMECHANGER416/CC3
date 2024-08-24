@@ -10,7 +10,7 @@ export default function Timeline2() {
   const [activeCardIndex, setActiveCardIndex] = useState(0);
 
   // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
-useEffect(() => {
+  useEffect(() => {
     const handleScroll = () => {
       const windowHeight = window.innerHeight;
       const scrollPosition = window.scrollY + windowHeight / 2;
@@ -76,11 +76,15 @@ const TimelineCard = ({ item, index, active, activeCard }: any) => {
       ref={ref}
     >
       <Reveal even={item.key % 2 !== 0}>
-        <div className="info glassy-div">
-          <h3 className="title md:text-lg text-md">{item.title}</h3>
-          <div className="flex flex-col data">
-            <h3 className="md:text-xl font-semibold py-2 ">{item.cardTitle}</h3>
-            <p>{item.cardDetailedText}</p>
+        <div className="sponsor_css rounded-2xl">
+          <div className="info glassy-div">
+            <h3 className="title md:text-lg text-md">{item.title}</h3>
+            <div className="flex flex-col data">
+              <h3 className="md:text-xl font-semibold py-2 ">
+                {item.cardTitle}
+              </h3>
+              <p>{item.cardDetailedText}</p>
+            </div>
           </div>
         </div>
       </Reveal>

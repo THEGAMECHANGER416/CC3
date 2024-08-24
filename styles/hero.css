@@ -14,16 +14,17 @@
   width: 350px;
   height: 300px;
   border-radius: 50%;
-  background-color: rgb(120, 47, 152);
+  background-color: rgb(0, 0, 0);
   background: linear-gradient(
     343deg,
-    rgba(120, 47, 152, 1) 0%,
-    rgba(5, 50, 129, 1) 82%,
-    rgba(52, 39, 100, 1) 100%
+    rgb(254, 94, 0) 0%,
+    rgb(254, 94, 0) 82%,
+    rgb(254, 94, 0) 100%
   );
+  /* rgb(234, 0, 27) */
   filter: blur(180px);
   z-index: -1;
-  /* animation: leviation 1.5s ease-in-out infinite alternate; */ 
+  /* animation: leviation 1.5s ease-in-out infinite alternate; */
 }
 .heroContainer1::after {
   content: "";
@@ -33,16 +34,16 @@
   width: 350px;
   height: 300px;
   border-radius: 50%;
-  background-color: rgb(120, 47, 152);
+  background-color: rgb(0, 0, 0);
   background: linear-gradient(
     343deg,
-    rgba(120, 47, 152, 1) 0%,
-    rgba(5, 50, 129, 1) 82%,
-    rgba(52, 39, 100, 1) 100%
+    rgb(121, 78, 13) 0%,
+    rgba(194, 125, 22, 0.618) 82%,
+    rgba(247, 159, 26, 0.233) 100%
   );
   filter: blur(220px);
   z-index: -1;
-  /* animation: leviation 1.5s ease-in-out infinite alternate; */ 
+  /* animation: leviation 1.5s ease-in-out infinite alternate; */
 }
 
 @keyframes leviation {

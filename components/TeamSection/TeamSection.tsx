@@ -44,30 +44,34 @@ function TeamSection() {
           Team
         </h1>
 
-        <div className=" md:flex hidden justify-center mt-24">
-          <Card
-            member={{
-              id: "Faculty coordinator, <br>Assistant Professor,<br> Department of Electronics and Communication,<br>Faculty of Technology,<br>DDU, Nadiad,<br> Gujarat, India",
-              name: "Prof. Dipak Rabari",
-              twitter: null,
-              github: null,
-              gradientColors: "bg-slate-200",
-              image: "/team_members/dipak-sir.png",
-            }}
-          />
+        <div className=" md:flex hidden justify-center mt-24 ">
+          <div className="sponsor_css rounded-2xl">
+            <Card
+              member={{
+                id: "Faculty coordinator, <br>Assistant Professor,<br> Department of Electronics and Communication,<br>Faculty of Technology,<br>DDU, Nadiad,<br> Gujarat, India",
+                name: "Prof. Dipak Rabari",
+                twitter: null,
+                github: null,
+                gradientColors: "bg-slate-200",
+                image: "/team_members/dipak-sir.png",
+              }}
+            />
+          </div>
         </div>
 
-        <div className=" md:hidden flex justify-center mt-24">
-          <Card
-            member={{
-              id: "Faculty coordinator",
-              name: "Prof. Dipak Rabari",
-              twitter: null,
-              github: null,
-              gradientColors: "bg-slate-200",
-              image: "/team_members/dipak-sir.png",
-            }}
-          />
+        <div className=" md:hidden flex justify-center mt-24 ">
+          <div className="sponsor_css rounded-2xl">
+            <Card
+              member={{
+                id: "Faculty coordinator",
+                name: "Prof. Dipak Rabari",
+                twitter: null,
+                github: null,
+                gradientColors: "bg-slate-200",
+                image: "/team_members/dipak-sir.png",
+              }}
+            />
+          </div>
         </div>
 
         <div className="sm:w-full sm:flex sm:items-center sm:justify-center mt-10">
@@ -83,7 +87,9 @@ function TeamSection() {
                 {button.label}
               </button>
             ))}
-            <div className={`animation ${showTeam} bg-gradient-to-l  from-purple-500  to-pink-500`}/>
+            <div
+              className={`animation ${showTeam} bg-gradient-to-l  from-purple-500  to-pink-500`}
+            />
           </div>
 
           {/* <div className="text-center">
@@ -95,7 +101,7 @@ function TeamSection() {
         <AnimatePresence mode="wait">
           <motion.div
             key={showTeam}
-            className="flex flex-wrap justify-center items-center pt-20 gap-10 sm:px-20 lg:px-96"
+            className="flex flex-wrap justify-center items-center pt-20 gap-10 sm:px-20 lg:px-40"
             initial={{
               opacity: 0,
               x: 300,
@@ -104,9 +110,9 @@ function TeamSection() {
             exit={{ opacity: 0, x: -300 }}
             transition={{ ease: "easeIn", duration: 0.4 }}
           >
-             {showTeam === "organizer" ? (
+            {showTeam === "organizer" ? (
               <>
-                <div>
+                <div className="sponsor_css rounded-2xl">
                   <Card member={teamData.organizers[0]} />
                 </div>
 
@@ -118,6 +124,7 @@ function TeamSection() {
                         initial={{ opacity: 0, y: 0 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 0 }}
+                        className="sponsor_css rounded-2xl"
                       >
                         <Card member={member} />
                       </motion.div>
@@ -133,6 +140,7 @@ function TeamSection() {
                     initial={{ opacity: 0, y: 0 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 0 }}
+                    className="sponsor_css rounded-2xl"
                   >
                     <Card member={member} />
                   </motion.div>
@@ -146,6 +154,7 @@ function TeamSection() {
                     initial={{ opacity: 0, y: 0 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 0 }}
+                    className="sponsor_css rounded-2xl"
                   >
                     <Card member={member} />
                   </motion.div>
@@ -159,6 +168,7 @@ function TeamSection() {
                     initial={{ opacity: 0, y: 0 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 0 }}
+                    className="sponsor_css rounded-2xl"
                   >
                     <Card member={member} />
                   </motion.div>
@@ -172,6 +182,7 @@ function TeamSection() {
                     initial={{ opacity: 0, y: 0 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 0 }}
+                    className="sponsor_css rounded-2xl"
                   >
                     <Card member={member} />
                   </motion.div>
@@ -185,14 +196,14 @@ function TeamSection() {
                     initial={{ opacity: 0, y: 0 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 0 }}
+                    className="sponsor_css rounded-2xl"
                   >
                     <Card member={member} />
                   </motion.div>
                 ))}
-                </>
+              </>
             ) : null}
-
-            </motion.div>
+          </motion.div>
         </AnimatePresence>
       </div>
     </>

@@ -11,10 +11,10 @@ function SponsorCard({ imageUrl, imageSize, hoverEffect, imageAlt }: any) {
       glareEnable
       tiltAngleYInitial={0}
       glareMaxOpacity={0.1}
-      className="fix-safari-tilt relative overflow-hidden rounded-2xl md:mx-4 my-4 mx-2 "
+      className="fix-safari-tilt relative overflow-hidden sponsor_css rounded-2xl md:mx-4 my-4 mx-2 "
     >
       <div
-        className={`relative flex h-full flex-col gap-6 rounded-2xl md:p-4 p-2 glassy-div ${hoverEffect}`}
+        className={`relative flex h-full flex-col gap-6 rounded-2xl md:p-4 p-2 glassy-div ${hoverEffect} `}
       >
         <div className="flex items-center justify-center md:p-1 p-px">
           {" "}

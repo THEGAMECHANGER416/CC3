@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 
 import "@/styles/navbar.css";
 import Image from "next/image";
@@ -10,15 +10,14 @@ import { IoMdClose } from "react-icons/io";
 import { WiStormShowers } from "react-icons/wi";
 
 const Navbar = (activeSection: any) => {
-
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
-  const handelClick = (e : any) =>{
+  const handelClick = (e: any) => {
     e.preventDefault();
-    router.push('/swag');
-  }
+    router.push("/swag");
+  };
 
   useEffect(() => {
     function handleClickOutside(event: any) {
@@ -77,10 +76,12 @@ const Navbar = (activeSection: any) => {
           </a>
         </div>
         <div className="flex space-x-2">
-        <div className="bg-gray-100  font-medium text-black p-2 mr-2 rounded-lg m-1">
-            <a href="/swag" onClick={handelClick}>Digital Swag</a>
+          <div className="bg-gray-100  font-medium text-black p-2 mr-2 rounded-lg m-1">
+            <a href="/swag" onClick={handelClick}>
+              Digital Swag
+            </a>
           </div>
-          
+
           <div className="hidden md:flex flex-wrap gap-5 text-white">
             <div
               className={`nav-titles nav-titles-ltr ${
