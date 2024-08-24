@@ -19,6 +19,7 @@ function TeamSection() {
     setShowTeam(team);
   };
 
+<<<<<<< Updated upstream
   const teamButtons = [
     { team: "organizer", label: "Organizer" },
     // { team: "web", label: "Web" },
@@ -36,13 +37,16 @@ function TeamSection() {
     // sponsorship: teamData.sponsorship_team,
     // web: teamData.web_team,
   };
+=======
+>>>>>>> Stashed changes
 
   return (
     <>
       <div className="mt-36 sm:mt-40 w-screen">
         <h1 className="text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-logo mt-40">
-          Team
+          Organizing Team
         </h1>
+<<<<<<< Updated upstream
 
         {/* <div className=" md:flex hidden justify-center mt-24 ">
           <div className=" teamData sponsor_css rounded-2xl">
@@ -98,6 +102,8 @@ function TeamSection() {
             </button>
           </div> */}
         </div>
+=======
+>>>>>>> Stashed changes
         <AnimatePresence mode="wait">
           <motion.div
             key={showTeam}
@@ -112,10 +118,13 @@ function TeamSection() {
           >
             {showTeam === "organizer" ? (
               <>
+<<<<<<< Updated upstream
                 {/* <div className="sponsor_css rounded-2xl">
                   <Card member={teamData.organizers[0]} />
                 </div> */}
 
+=======
+>>>>>>> Stashed changes
                 <div className="flex flex-row flex-wrap gap-4 items-center justify-center">
                   {teamData.organizers.map((member, index) =>
                     index == 7 ? null : (
@@ -132,6 +141,7 @@ function TeamSection() {
                   )}
                 </div>
               </>
+<<<<<<< Updated upstream
             // ) : showTeam === "design" ? (
             //   <>
             //     {teamData.design_team.map((member, index) => (
@@ -202,6 +212,8 @@ function TeamSection() {
             //       </motion.div>
             //     ))}
             //   </>
+=======
+>>>>>>> Stashed changes
             ) : null}
           </motion.div>
         </AnimatePresence>

@@ -33,7 +33,8 @@ const CountdownTimer = () => {
   };
 
   useEffect(() => {
-    const endDate = new Date("2024-02-24T00:00:00"); // Change this to the date of event
+    // The time is in corrected for IST @Om-Mishra7
+    const endDate = new Date("2024-09-21T03:30:00Z");
 
     const intervalId = setInterval(() => {
       calculateTimeRemaining(endDate);

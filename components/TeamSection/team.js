@@ -7,7 +7,11 @@ const teamData = {
       linkedin: "themanas95826",
       
       image:
+<<<<<<< Updated upstream
         "/team_members/manasChopra.JPG",
+=======
+        "/team_members/manasChopra.jpg",
+>>>>>>> Stashed changes
     },
     {
       key: 2,
@@ -16,7 +20,11 @@ const teamData = {
       linkedin: "arnav-gupta-437a66256",
       
       image:
+<<<<<<< Updated upstream
         "/team_members/arnavGupta.JPG",
+=======
+        "/team_members/arnavGupta.jpg",
+>>>>>>> Stashed changes
     },
     {
       key: 3,
@@ -25,7 +33,11 @@ const teamData = {
       linkedin: "pratham1908",
       
       image:
+<<<<<<< Updated upstream
         "/team_members/prathamBatra.JPG",
+=======
+        "/team_members/prathamBatra.jpg",
+>>>>>>> Stashed changes
     },
     {
       key: 4,
@@ -34,7 +46,11 @@ const teamData = {
       linkedin: "saksham-verma-a9390b256",
       
       image:
+<<<<<<< Updated upstream
         "/team_members/sakshamVerma.JPG",
+=======
+        "/team_members/sakshamVerma.jpg",
+>>>>>>> Stashed changes
     },
     {
       key: 5,
@@ -43,6 +59,7 @@ const teamData = {
       linkedin: "purvesh-gupta-736b95256/",
       
       image:
+<<<<<<< Updated upstream
         "/team_members/purveshGupta.JPG",
     },
   //   {
@@ -327,6 +344,11 @@ const teamData = {
   //     image: "/speakers/ayush.png",
   //   },
   // ],
+=======
+        "/team_members/purveshGupta.jpg",
+    },
+  ],
+>>>>>>> Stashed changes
 };
 
 export default teamData;
