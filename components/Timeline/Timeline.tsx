@@ -13,7 +13,9 @@ export default function Timeline() {
             item.key % 2 === 0 ? (
               <Reveal key={item.key} even>
                 <div
-                  className={"relative flex items-center justify-between md:justify-normal md:flex-row group is-active md:mt-10 mt-20 "}
+                  className={
+                    "relative flex items-center justify-between md:justify-normal md:flex-row group is-active md:mt-10 mt-20 "
+                  }
                 >
                   <div
                     className={`flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-[#457f86]
@@ -44,10 +46,14 @@ export default function Timeline() {
             ) : (
               <Reveal key={item.key}>
                 <div
-                  className={"relative flex items-center justify-between md:justify-normal md:flex-row-reverse group is-active md:mt-10 mt-20"}
+                  className={
+                    "relative flex items-center justify-between md:justify-normal md:flex-row-reverse group is-active md:mt-10 mt-20"
+                  }
                 >
                   <div
-                    className={"flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-[#457f86] text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-10 md:translate-x--2/3 glassy-div"}
+                    className={
+                      "flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-[#457f86] text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-10 md:translate-x--2/3 glassy-div"
+                    }
                   />
                   <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3.2rem)] card-odd p-2 m-4  rounded-2xl">
                     <div

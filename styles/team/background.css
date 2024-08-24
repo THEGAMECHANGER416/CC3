@@ -7,13 +7,18 @@
 .teamContainer1::before {
   content: "";
   position: absolute;
-  top: 120px; 
+  top: 120px;
   left: -400px;
   width: 1350px;
   height: 200px;
   border-radius: 50%;
-  background-color: rgb(120, 47, 152);
-  background: linear-gradient(343deg, rgba(120, 47, 152, 1) 0%, rgba(5, 50, 129, 1) 82%, rgba(52, 39, 100, 1) 100%);
+  background-color: rgb(0, 0, 0);
+  background: linear-gradient(
+    343deg,
+    rgb(254, 94, 0) 0%,
+    rgb(44, 17, 1) 82%,
+    rgb(254, 94, 0) 100%
+  );
   filter: blur(300px);
   z-index: -1;
 }
@@ -32,21 +37,16 @@
   z-index: -1;
 } */
 
- 
 @media screen and (max-width: 768px) {
-  .teamContainer1::after{
-    right: 0; 
+  .teamContainer1::after {
+    right: 0;
     left: 0;
-
   }
-  .teamContainer1::before{
-    width:400px;
+  .teamContainer1::before {
+    width: 400px;
     height: 300px;
-    right: 220px; 
+    right: 220px;
     left: 0;
     filter: blur(180px);
-
   }
 }
-
-

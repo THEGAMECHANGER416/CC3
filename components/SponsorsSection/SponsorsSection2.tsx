@@ -30,14 +30,13 @@ export default function SponsorsSection2() {
   const sponsors: SponsorsGroup = {
     //emerald: [{ src: "/sponsors_logos/Devfolio_Logo-White.svg", alt: "LOGO" }],
     //diamond: [],
-    event:[
-       {
-         src : "/sponsors_logos/apex_new.png",
-         alt: "Apex Education & Consultancy Logo",
-         link: "https://aeoc.in/",
-         class: "scale-[1] md:scale-[1]",
-    
-       }
+    event: [
+      {
+        src: "/sponsors_logos/apex_new.png",
+        alt: "Apex Education & Consultancy Logo",
+        link: "https://aeoc.in/",
+        class: "scale-[1] md:scale-[1]",
+      },
     ],
     gold: [
       {
@@ -130,7 +129,10 @@ export default function SponsorsSection2() {
   };
 
   const categorySizes: { [key: string]: CategorySize } = {
-    event: { imgSize: "h-[100px] w-[340px]  md:px-8 px-4 py-1 md:h-[200px] md:w-[800px] " },
+    event: {
+      imgSize:
+        "h-[100px] w-[340px]  md:px-8 px-4 py-1 md:h-[200px] md:w-[800px] ",
+    },
 
     emerald: { imgSize: "w-48 h-16 sm:h-full sm:w-full" },
     diamond: { imgSize: "w-48 h-16 sm:h-full sm:w-full" },
@@ -156,14 +158,15 @@ export default function SponsorsSection2() {
           <h2
             className={`text-center m-auto md:my-20 my-10 text-white text-lg md:text-xl xl:text-2xl md:w-1/6 w-1/2 font-semibold px-1 py-2 title-${category.toLowerCase()} rounded-md`}
           >
-            {category.charAt(0).toUpperCase() + category.slice(1)} {category === "event" ? "Sponsor" : "Sponsors"}
+            {category.charAt(0).toUpperCase() + category.slice(1)}{" "}
+            {category === "event" ? "Sponsor" : "Sponsors"}
           </h2>
           <div className="flex flex-wrap justify-center md:px-20">
             {sponsorList.map((sponsor, index) => (
               <a href={sponsor.link ? sponsor.link : ""} target="_blank">
                 <div
                   key={index}
-                  className={`m-4 glassy-div bg-cover bg-center flex items-center justify-center no-repeat rounded-2xl md:p-5 p-1 hover-effect-${category} ${
+                  className={`m-4 glassy-div bg-cover bg-center flex items-center sponsor_css justify-center no-repeat rounded-2xl md:p-5 p-1 hover-effect-${category} ${
                     sponsor.link ? "cursor-pointer" : "cursor-default"
                   } ${categorySizes[category]?.imgSize}`}
                   onClick={
