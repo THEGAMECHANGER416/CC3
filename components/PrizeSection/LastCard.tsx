@@ -45,12 +45,12 @@ const LastCard = () => {
                     </li>
                   ))}
                 </div>
-                <button
+                {/* <button
                   onClick={handleFlip}
                   className="sm:mt-auto mb-5 px-5 py-2 rounded-full bg-black mt-5 text-xs sm:text-base sm:w-20 ml-auto mr-5"
                 >
                   More
-                </button>
+                </button> */}
               </div>
             </Tilt>
           </div>

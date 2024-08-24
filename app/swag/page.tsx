@@ -45,7 +45,7 @@ export default function Swag() {
         toPng(ref.current, { cacheBust: true, })
             .then((dataUrl) => {
                 const link = document.createElement('a')
-                link.download = 'DUHacks.png'
+                link.download = 'codeCubicle.png'
                 link.href = dataUrl
                 link.click()
                 setConfetti(true);

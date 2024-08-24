@@ -60,7 +60,7 @@ const Navbar2 = (activeSection: any) => {
         <div className="sm:pl-7 mr-auto">
           <a href="https://duhacks.tech/#top">
             <img
-              src="/assets/images/duhacks.png"
+              src="/assets/images/codeCubicle.jpg"
               alt="DU Hacks"
               width={50}
               height={50}

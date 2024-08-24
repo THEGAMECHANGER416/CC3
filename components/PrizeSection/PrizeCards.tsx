@@ -79,12 +79,12 @@ const Card = ({
                     </li>
                   ))}
                 </div>
-                <button
+                {/* <button
                   onClick={handleFlip}
                   className="mt-4 w-1/2 m-auto px-5 py-2 text-sm"
                 >
                   More
-                </button>
+                </button> */}
               </div>
             </Tilt>
           </div>

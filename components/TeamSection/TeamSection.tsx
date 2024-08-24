@@ -21,20 +21,20 @@ function TeamSection() {
 
   const teamButtons = [
     { team: "organizer", label: "Organizer" },
-    { team: "web", label: "Web" },
-    { team: "sponsorship", label: "Sponsorship" },
-    { team: "management", label: "Management" },
-    { team: "outreach", label: "Outreach" },
-    { team: "design", label: "Design" },
+    // { team: "web", label: "Web" },
+    // { team: "sponsorship", label: "Sponsorship" },
+    // { team: "management", label: "Management" },
+    // { team: "outreach", label: "Outreach" },
+    // { team: "design", label: "Design" },
   ];
 
   const teamMapping = {
     organizer: teamData.organizers,
-    design: teamData.design_team,
-    management: teamData.management_team,
-    outreach: teamData.outreach_team,
-    sponsorship: teamData.sponsorship_team,
-    web: teamData.web_team,
+    // design: teamData.design_team,
+    // management: teamData.management_team,
+    // outreach: teamData.outreach_team,
+    // sponsorship: teamData.sponsorship_team,
+    // web: teamData.web_team,
   };
 
   return (
@@ -44,8 +44,8 @@ function TeamSection() {
           Team
         </h1>
 
-        <div className=" md:flex hidden justify-center mt-24 ">
-          <div className="sponsor_css rounded-2xl">
+        {/* <div className=" md:flex hidden justify-center mt-24 ">
+          <div className=" teamData sponsor_css rounded-2xl">
             <Card
               member={{
                 id: "Faculty coordinator, <br>Assistant Professor,<br> Department of Electronics and Communication,<br>Faculty of Technology,<br>DDU, Nadiad,<br> Gujarat, India",
@@ -57,9 +57,9 @@ function TeamSection() {
               }}
             />
           </div>
-        </div>
+        </div> */}
 
-        <div className=" md:hidden flex justify-center mt-24 ">
+        {/* <div className=" md:hidden flex justify-center mt-24 ">
           <div className="sponsor_css rounded-2xl">
             <Card
               member={{
@@ -72,7 +72,7 @@ function TeamSection() {
               }}
             />
           </div>
-        </div>
+        </div> */}
 
         <div className="sm:w-full sm:flex sm:items-center sm:justify-center mt-10">
           <div className="text-center container1 container2  teamContainer1 sm:text-lg text-sm navigation">
@@ -112,13 +112,13 @@ function TeamSection() {
           >
             {showTeam === "organizer" ? (
               <>
-                <div className="sponsor_css rounded-2xl">
+                {/* <div className="sponsor_css rounded-2xl">
                   <Card member={teamData.organizers[0]} />
-                </div>
+                </div> */}
 
                 <div className="flex flex-row flex-wrap gap-4 items-center justify-center">
                   {teamData.organizers.map((member, index) =>
-                    index == 0 ? null : (
+                    index == 7 ? null : (
                       <motion.div
                         key={`${member.key}`}
                         initial={{ opacity: 0, y: 0 }}
@@ -132,76 +132,76 @@ function TeamSection() {
                   )}
                 </div>
               </>
-            ) : showTeam === "design" ? (
-              <>
-                {teamData.design_team.map((member, index) => (
-                  <motion.div
-                    key={`${member.key}`}
-                    initial={{ opacity: 0, y: 0 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 0 }}
-                    className="sponsor_css rounded-2xl"
-                  >
-                    <Card member={member} />
-                  </motion.div>
-                ))}
-              </>
-            ) : showTeam === "management" ? (
-              <>
-                {teamData.management_team.map((member, index) => (
-                  <motion.div
-                    key={`${member.key}`}
-                    initial={{ opacity: 0, y: 0 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 0 }}
-                    className="sponsor_css rounded-2xl"
-                  >
-                    <Card member={member} />
-                  </motion.div>
-                ))}
-              </>
-            ) : showTeam === "outreach" ? (
-              <>
-                {teamData.outreach_team.map((member, index) => (
-                  <motion.div
-                    key={`${member.key}`}
-                    initial={{ opacity: 0, y: 0 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 0 }}
-                    className="sponsor_css rounded-2xl"
-                  >
-                    <Card member={member} />
-                  </motion.div>
-                ))}
-              </>
-            ) : showTeam === "sponsorship" ? (
-              <>
-                {teamData.sponsorship_team.map((member, index) => (
-                  <motion.div
-                    key={`${member.key}`}
-                    initial={{ opacity: 0, y: 0 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 0 }}
-                    className="sponsor_css rounded-2xl"
-                  >
-                    <Card member={member} />
-                  </motion.div>
-                ))}
-              </>
-            ) : showTeam === "web" ? (
-              <>
-                {teamData.web_team.map((member, index) => (
-                  <motion.div
-                    key={`${member.key}`}
-                    initial={{ opacity: 0, y: 0 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 0 }}
-                    className="sponsor_css rounded-2xl"
-                  >
-                    <Card member={member} />
-                  </motion.div>
-                ))}
-              </>
+            // ) : showTeam === "design" ? (
+            //   <>
+            //     {teamData.design_team.map((member, index) => (
+            //       <motion.div
+            //         key={`${member.key}`}
+            //         initial={{ opacity: 0, y: 0 }}
+            //         animate={{ opacity: 1, y: 0 }}
+            //         exit={{ opacity: 0, y: 0 }}
+            //         className="sponsor_css rounded-2xl"
+            //       >
+            //         <Card member={member} />
+            //       </motion.div>
+            //     ))}
+            //   </>
+            // ) : showTeam === "management" ? (
+            //   <>
+            //     {teamData.management_team.map((member, index) => (
+            //       <motion.div
+            //         key={`${member.key}`}
+            //         initial={{ opacity: 0, y: 0 }}
+            //         animate={{ opacity: 1, y: 0 }}
+            //         exit={{ opacity: 0, y: 0 }}
+            //         className="sponsor_css rounded-2xl"
+            //       >
+            //         <Card member={member} />
+            //       </motion.div>
+            //     ))}
+            //   </>
+            // ) : showTeam === "outreach" ? (
+            //   <>
+            //     {teamData.outreach_team.map((member, index) => (
+            //       <motion.div
+            //         key={`${member.key}`}
+            //         initial={{ opacity: 0, y: 0 }}
+            //         animate={{ opacity: 1, y: 0 }}
+            //         exit={{ opacity: 0, y: 0 }}
+            //         className="sponsor_css rounded-2xl"
+            //       >
+            //         <Card member={member} />
+            //       </motion.div>
+            //     ))}
+            //   </>
+            // ) : showTeam === "sponsorship" ? (
+            //   <>
+            //     {teamData.sponsorship_team.map((member, index) => (
+            //       <motion.div
+            //         key={`${member.key}`}
+            //         initial={{ opacity: 0, y: 0 }}
+            //         animate={{ opacity: 1, y: 0 }}
+            //         exit={{ opacity: 0, y: 0 }}
+            //         className="sponsor_css rounded-2xl"
+            //       >
+            //         <Card member={member} />
+            //       </motion.div>
+            //     ))}
+            //   </>
+            // ) : showTeam === "web" ? (
+            //   <>
+            //     {teamData.web_team.map((member, index) => (
+            //       <motion.div
+            //         key={`${member.key}`}
+            //         initial={{ opacity: 0, y: 0 }}
+            //         animate={{ opacity: 1, y: 0 }}
+            //         exit={{ opacity: 0, y: 0 }}
+            //         className="sponsor_css rounded-2xl"
+            //       >
+            //         <Card member={member} />
+            //       </motion.div>
+            //     ))}
+            //   </>
             ) : null}
           </motion.div>
         </AnimatePresence>
