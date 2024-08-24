@@ -7,27 +7,16 @@ import CardFlip from "react-card-flip";
 import Image from "next/image";
 import prizeData from "./prizes";
 
-type CardProps = {
-  image: string;
-  textsBack?: string[]; // Make textsBack optional
-  texts: string[];
-  position: number | string;
-  order: string;
-  imgWidth: number;
-  paddingTop?: number;
-  link?: string;
-};
-
 const Card = ({
   image,
-  textsBack = [], // Default to an empty array if textsBack is not provided
+  textsBack,
   texts,
   position,
   order,
   imgWidth,
   paddingTop = 2,
   link = "",
-}: CardProps) => {
+}: any) => {
   const [isFlipped, setIsFlipped] = useState(false);
   let myMargin = "";
 
@@ -76,8 +65,8 @@ const Card = ({
                   />
                 </a>
               </div>
-              <div className="content flex-grow flex flex-col justify-center">
-                <div className="h-[220px] px-2">
+              <div className="content  flex-grow flex flex-col justify-center">
+                <div className=" h-[220px]px-2">
                   {texts.map((text: any, index: number) => (
                     <li
                       key={index}
@@ -101,7 +90,7 @@ const Card = ({
               glareEnable
               tiltAngleYInitial={0}
               glareMaxOpacity={0.1}
-              className="card card-back prize-card"
+              className="card  card-back prize-card"
             >
               <div className="flex-grow flex flex-col justify-center items-start h-full px-5 py-10 text-center mx-2">
                 {textsBack.map((text: any, index: number) => (
@@ -134,14 +123,13 @@ const PrizeCards = () => {
           <div className="prizeContainer md:grid hidden grid-cols-1 sm:grid-cols-3 gap-3 lg:grid-cols-3 mb-10">
             {prizeData.cardContents.slice(0, 3).map((card: any, index: any) => (
               <Card
-                key={index}
                 texts={card.texts}
                 textsBack={card.textsBack}
                 position={index % 2 === 0 ? "2" : "1"}
                 order={`order-${index + 1}`}
                 image={card.image}
                 imgWidth={card.imgWidth}
-                paddingTop={card.paddingTop}
+                paddingTop={card.paddingTop ? parseInt(card.paddingTop, 10) : undefined}
                 link={card.link ? card.link : ""}
               />
             ))}
@@ -150,14 +138,13 @@ const PrizeCards = () => {
         <div className="prizeContainer grid md:hidden grid-cols-1 sm:grid-cols-3 gap-3 lg:grid-cols-3 mb-10">
           {prizeData.cardContents2.slice(0, 3).map((card: any, index: any) => (
             <Card
-              key={index}
               texts={card.texts}
               textsBack={card.textsBack}
               position={index % 2 === 0 ? "2" : "1"}
               order={`order-${index + 1}`}
               image={card.image}
               imgWidth={card.imgWidth}
-              paddingTop={card.paddingTop}
+              paddingTop={card.paddingTop ? parseInt(card.paddingTop, 10) : undefined}
               link={card.link ? card.link : ""}
             />
           ))}
@@ -173,12 +160,12 @@ const PrizeCards = () => {
               order={`order-4`}
               image={prizeData.cardContents[3].image}
               imgWidth={prizeData.cardContents[3].imgWidth}
-              paddingTop={prizeData.cardContents[3].paddingTop}
+              paddingTop={prizeData.cardContents[3].paddingTop ? parseInt(prizeData.cardContents[3].paddingTop, 10) : undefined}
             />
           </div>
         )}
 
-        {prizeData.cardContents2.length > 3 && (
+        {prizeData.cardContents.length > 3 && (
           <div className="prizeContainer md:hidden flex">
             <Card
               key={3}
@@ -188,6 +175,7 @@ const PrizeCards = () => {
               order={`order-4`}
               image={prizeData.cardContents2[3].image}
               imgWidth={prizeData.cardContents2[3].imgWidth}
+              paddingTop={prizeData.cardContents2[3].paddingTop ? parseInt(prizeData.cardContents2[3].paddingTop, 10) : undefined}
             />
           </div>
         )}
