@@ -19,7 +19,7 @@ export default function HeroSection() {
               alt="Hero"
               width={320}
               height={320}
-              className="object-contain -translate-x-[15px] -ml-30"
+              className="object-contain -translate-x-[40px] md:-translate-x-[15px] -ml-30"
             />
           </div>
         </Reveal>

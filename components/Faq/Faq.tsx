@@ -193,7 +193,7 @@ export default function FAQ() {
                 alt="faq boy"
                 width={500}
                 height={500}
-                className="object-contain scale-x-[-1] -translate-x-[-40px] -translate-y-[40px]"
+                className="object-contain scale-x-[-1] md:-translate-x-[-40px] md:-translate-y-[40px] translate-y-[30px]"
               />
               {/* </div> */}
             </div>
