@@ -7,18 +7,27 @@ import CardFlip from "react-card-flip";
 import Image from "next/image";
 import prizeData from "./prizes";
 
+type CardProps = {
+  image: string;
+  textsBack?: string[]; // Make textsBack optional
+  texts: string[];
+  position: number | string;
+  order: string;
+  imgWidth: number;
+  paddingTop?: number;
+  link?: string;
+};
+
 const Card = ({
   image,
-  textsBack,
+  textsBack = [], // Default to an empty array if textsBack is not provided
   texts,
   position,
   order,
   imgWidth,
   paddingTop = 2,
   link = "",
-}: any) => {
-  // console.log("imgWidth:", imgWidth);
-
+}: CardProps) => {
   const [isFlipped, setIsFlipped] = useState(false);
   let myMargin = "";
 
@@ -64,12 +73,11 @@ const Card = ({
                     height={200}
                     objectFit="cover"
                     className={`pt-${paddingTop}`}
-                    // className={`w-28 md:w-[${imgWidth? imgWidth : "300"}px] pt-${paddingTop}`}
                   />
                 </a>
               </div>
-              <div className="content  flex-grow flex flex-col justify-center">
-                <div className=" h-[220px]px-2">
+              <div className="content flex-grow flex flex-col justify-center">
+                <div className="h-[220px] px-2">
                   {texts.map((text: any, index: number) => (
                     <li
                       key={index}
@@ -79,12 +87,6 @@ const Card = ({
                     </li>
                   ))}
                 </div>
-                {/* <button
-                  onClick={handleFlip}
-                  className="mt-4 w-1/2 m-auto px-5 py-2 text-sm"
-                >
-                  More
-                </button> */}
               </div>
             </Tilt>
           </div>
@@ -99,7 +101,7 @@ const Card = ({
               glareEnable
               tiltAngleYInitial={0}
               glareMaxOpacity={0.1}
-              className="card  card-back prize-card"
+              className="card card-back prize-card"
             >
               <div className="flex-grow flex flex-col justify-center items-start h-full px-5 py-10 text-center mx-2">
                 {textsBack.map((text: any, index: number) => (
@@ -123,6 +125,7 @@ const Card = ({
     </div>
   );
 };
+
 const PrizeCards = () => {
   return (
     <>
@@ -131,6 +134,7 @@ const PrizeCards = () => {
           <div className="prizeContainer md:grid hidden grid-cols-1 sm:grid-cols-3 gap-3 lg:grid-cols-3 mb-10">
             {prizeData.cardContents.slice(0, 3).map((card: any, index: any) => (
               <Card
+                key={index}
                 texts={card.texts}
                 textsBack={card.textsBack}
                 position={index % 2 === 0 ? "2" : "1"}
@@ -146,6 +150,7 @@ const PrizeCards = () => {
         <div className="prizeContainer grid md:hidden grid-cols-1 sm:grid-cols-3 gap-3 lg:grid-cols-3 mb-10">
           {prizeData.cardContents2.slice(0, 3).map((card: any, index: any) => (
             <Card
+              key={index}
               texts={card.texts}
               textsBack={card.textsBack}
               position={index % 2 === 0 ? "2" : "1"}
@@ -173,7 +178,7 @@ const PrizeCards = () => {
           </div>
         )}
 
-        {prizeData.cardContents.length > 3 && (
+        {prizeData.cardContents2.length > 3 && (
           <div className="prizeContainer md:hidden flex">
             <Card
               key={3}
