@@ -15,11 +15,11 @@ export default function HeroSection() {
         <Reveal>
           <div className="heroContainer1 text-center">
             <img
-              src="/assets/images/mascot-2.svg"
+              src="/assets/images/77.png"
               alt="Hero"
-              width={300}
-              height={300}
-              className="object-contain -ml-10"
+              width={320}
+              height={320}
+              className="object-contain -translate-x-[15px] -ml-30"
             />
           </div>
         </Reveal>

@@ -1,5 +1,5 @@
 // "use client";
-import { RiGithubLine, RiTwitterXLine } from "react-icons/ri";
+import { RiGithubLine, RiLinkedinLine } from "react-icons/ri";
 import Tilt from "react-parallax-tilt";
 import Image from "next/image";
 function Card({ member }: any) {
@@ -10,16 +10,16 @@ function Card({ member }: any) {
       glareEnable
       tiltAngleYInitial={0}
       glareMaxOpacity={0.1}
-      className="fix-safari-tilt relative sm:w-64 w-40 overflow-hidden  rounded-2xl "
+      className="fix-safari-tilt relative  w-80 overflow-hidden  rounded-2xl "
     >
       <div className="relative flex h-full flex-col gap-6 rounded-2xl sm:p-8 p-4 glassy-div sponsor_css ">
         <div className="flex items-center justify-center">
           {" "}
           <Image
-            className="sm:w-40 h-full rounded-2xl"
+            className="h-full rounded-2xl"
             src={member.image}
-            width={100}
-            height={100}
+            width={200}
+            height={200}
             objectFit="cover"
             alt="member image"
           />
@@ -35,13 +35,13 @@ function Card({ member }: any) {
             <span dangerouslySetInnerHTML={{ __html: member.id }} />
           </p>
           <div className="text-sm flex gap-2 mt-3">
-            {member.twitter && (
+            {member.linkedin && (
               <a
-                href={`https://twitter.com/${member.twitter}`}
+                href={`https://www.linkedin.com/in/${member.linkedin}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <RiTwitterXLine />
+                <RiLinkedinLine />
               </a>
             )}
             {member.github && (

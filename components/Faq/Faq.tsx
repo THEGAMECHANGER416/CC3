@@ -189,11 +189,11 @@ export default function FAQ() {
               {/* <div className="flex justify-center"> */}
 
               <img
-                src="/assets/images/mascot.svg"
+                src="/assets/images/avatar_faq.png"
                 alt="faq boy"
-                width={250}
-                height={250}
-                className="object-contain scale-x-[-1]"
+                width={500}
+                height={500}
+                className="object-contain scale-x-[-1] -translate-x-[-40px] -translate-y-[40px]"
               />
               {/* </div> */}
             </div>
