@@ -7,8 +7,8 @@ import "../../styles/hero.css";
 
 export default function HeroSection() {
   return (
-    <div className="mb-10 md:mb-36 gradient-background w-screen sm:scale-150 sm:mt-52 -mt-10">
-      <div className="justify-center space-x-20 items-center flex flex-col-reverse md:flex-row">
+    <div className="mb-10 md:mb-36 gradient-background w-screen sm:scale-150 sm:mt-52 -mt-50">
+      <div className="justify-center space-x-20 items-center flex flex-col-reverse md:flex-row custom-margin-div">
         <div className="">
           <Content />
         </div>

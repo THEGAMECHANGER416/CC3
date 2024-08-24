@@ -80,7 +80,7 @@ const Content: React.FC = () => {
       <div
           className="apply-button"
           data-hackathon-slug="code-cubicle-3"
-          data-button-theme="light"
+          data-button-theme="dark"
           style={{ height: "44px", width: "312px" }}
         ></div>
       </motion.div>
