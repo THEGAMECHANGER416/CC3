@@ -15,11 +15,11 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   const SOCIALS = {
-    instagram: "https://instagram.com/duhacks2022?igshid=YmMyMTA2M2Y=",
-    discord: "https://discord.gg/T2fzD8c2j2",
-    linkedin: "https://www.linkedin.com/company/duhacks/",
+    instagram: "https://www.instagram.com/code_cubicle_3.0/?hl=en",
+    discord: "https://discord.com/invite/gyHAqqkr",
+    linkedin: "https://www.linkedin.com/company/geekroom-codecubicle/",
     twitter: "https://twitter.com/DuHacks?t=CPjNJmQX1JxhIHb_YI0Tuw&s=09",
-    email: "mailto:contact@duhacks.tech",
+    email: "codecubicle24@gmail.com",
     mail: "contact@duhacks.tech",
   };
 
@@ -29,32 +29,32 @@ const Footer = () => {
         <div className="lg:hidden flex justify-center mb-7 font-bold"/>
       
         <div className="flex justify-center text-sm lg:text-3xl space-x-4 mb-9">
-          <a href="https://discord.gg/T2fzD8c2j2">
+          <a href="https://discord.com/invite/gyHAqqkr">
             <span className="sr-only">Discord</span>
            <FaDiscord/>
           </a>
           <div className=" border-r-2 transform rotate-12 " />
-          <a href="https://twitter.com/DuHacks">
+          {/* <a href="https://twitter.com/DuHacks">
             <span className="sr-only">Twitter</span>
             <FaXTwitter/>
 
-          </a>
+          </a> */}
           <div className=" border-r-2 transform rotate-12" />
 
-          <a href="https://www.linkedin.com/company/duhacks/">
+          <a href="https://www.linkedin.com/company/geekroom-codecubicle/">
             <span className="sr-only ">LinkedIn</span>
             <FaLinkedinIn/>
 
           </a>
           <div className=" border-r-2 transform rotate-12" />
 
-          <a href="https://www.youtube.com/@duhacks9111">
+          {/* <a href="https://www.youtube.com/@duhacks9111">
             <span className="sr-only">YouTube</span>
             <FaYoutube/>
-          </a>
+          </a> */}
           <div className=" border-r-2 transform rotate-12" />
 
-          <a href="https://instagram.com/duhacks2024">
+          <a href="https://www.instagram.com/code_cubicle_3.0/?hl=en">
             <span className="sr-only">Instagram</span>
             <FaInstagram/>
           </a>
@@ -62,10 +62,10 @@ const Footer = () => {
         <div className="flex justify-center">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-8 lg:gap-y-0 xl:gap-x-36 items-center justify-around text-xs xl:text-sm">
             <div className="lg:grid grid-cols-3 text-center hidden">
-            <a  href="mailto:gdsc@ddu.ac.in">
+            <a  href="mailto:codecubicle24@gmail.com">
                 Contact Us
             </a>
-             <a href="https://discord.gg/T2fzD8c2j2" target="_blank" rel="noreferrer">Join Discord</a>
+             <a href="https://discord.com/invite/gyHAqqkr" target="_blank" rel="noreferrer">Join Discord</a>
             </div>
             <div className="flex justify-center">
               <img
@@ -75,7 +75,7 @@ const Footer = () => {
               />
             </div>
             <div className="mx-5 lg:mx-0 text-center">
-              Copyrights © 2023. All rights reserved by DUHacks 3.0
+              Copyrights © 2023. All rights reserved by Code Cubicle 3.0
             </div>
           </div>
         </div>

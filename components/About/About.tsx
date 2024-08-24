@@ -19,7 +19,7 @@ const About = () => {
     <>
       <div className="w-screen flex-col sm:px-14 md:px-40 lg:px-40 xl:px-80 mt-36 sm:mt-56">
         <h1 className="text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-logo">
-          What is DUHacks ?
+          What is Code Cubicle 3.0 ?
         </h1>
         <div className="mt-24 flex flex-col sm:flex-row w-full items-center justify-center gap-5 px-5" >
           <div className="basis-1/3 border-2 rounded-2xl w-full p-5 glassy-effect aboutContainer1  ">
@@ -65,23 +65,25 @@ const About = () => {
         <div className="flex flex-col sm:flex-row w-full items-center justify-center gap-5 px-5 mt-5 container1 container2">
           <div className="basis-1/2 border-2 rounded-2xl sm:h-96 w-full p-5 overflow-y-scroll lg:overflow-auto glassy-effect ">
             <p className="text-slate-200 text-lg sm:text-xl sm:mt-3">
-              Getting into a loop of ideas, but finding out where to showcase them? It's time to think big and act fast!💡
-  Start building projects and join us at DUHacks 3.0! 🛠️
+            Feeling overwhelmed with ideas but unsure where to bring them to life? 🚀 It’s time to turn your visions into action! 
+            💡 Dive into Code Cubicle 3.0, the ultimate hackathon hosted by Geek Room! 🛠️
   <br />
   <br />
 
-  DUHacks 3.0 is a 36-hour national-level hackathon organized by the Google Developer Student Club, DDU🌍
+  Code Cubicle 3.0 isn’t just an event; it’s a playground for innovators where developers, designers, and tech enthusiasts come 
+  together to bring their boldest ideas to fruition. 🌍
   <br />
   <br />
 
-  This event provides a platform for passionate developers, designers, and enthusiasts to come together and
-  transform their ideas into reality.
-  It's not just an opportunity to showcase technical skills; it's a chance to network, learn, and have a
-  memorable time with like-minded individuals.🤝
+  Not just about winning, it’s about learning new technologies, tackling real-world challenges, and gaining fresh perspectives.
+  Here, every idea is a seed that could grow into something extraordinary. But it’s more than just code and competition—it’s about 
+  learning, connecting, and having a blast with a community of innovators. 🤝⚡ Collaborate, brainstorm, and push the limits with 
+  other passionate minds that share your love for tech.
   <br />
   <br />
   <p className="font-bold">
-  Your keyboard is your sword, your idea is your challenge, code is your vision, and DUHacks 3.0 is your stage! 🚨
+    Get ready to turn those late-night coffee-fueled thoughts into reality, your ideas are your power, code is your 
+    craft and CODE CUBICLE 3.0 is where it all comes together!🌐🛠️
   </p>
   <br />
   <br />
