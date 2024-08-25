@@ -3,20 +3,6 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import CountdownTimer from "./CountdownTimer";
 
 const Content: React.FC = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
-    script.async = true;
-    script.defer = true;
-    script.onload = () => {
-      console.log("Devfolio SDK loaded and button initialized");
-    };
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-  
 
   const h1Variants = {
     hidden: { opacity: 0, x: 0, y: 0 },
@@ -77,12 +63,13 @@ const Content: React.FC = () => {
       </div>
       <motion.div
       >
-      <div
-          className="apply-button"
-          data-hackathon-slug="code-cubicle-3"
-          data-button-theme="dark"
-          style={{ height: "44px", width: "312px" }}
-        ></div>
+      <button
+        className="bg-white text-black font-bold py-2 px-4 rounded-full custom-devfolio-button"
+      >
+        <a href="https://code-cubicle-3.devfolio.co/" target="_blank" rel="noreferrer">
+          Register Now
+        </a>
+        </button>
       </motion.div>
         
       <motion.div className="text-md text-white">
