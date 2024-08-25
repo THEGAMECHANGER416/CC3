@@ -91,34 +91,35 @@ const Card = ({
         )}
 
         {/* Back of the card */}
-        {isFlipped && (
-          <div className="">
-            <Tilt
-              tiltMaxAngleX={2.5}
-              tiltMaxAngleY={5}
-              glareEnable
-              tiltAngleYInitial={0}
-              glareMaxOpacity={0.1}
-              className="card  card-back prize-card"
-            >
-              <div className="flex-grow flex flex-col justify-center items-start h-full px-5 py-10 text-center mx-2">
-                {textsBack.map((text: any, index: number) => (
-                  <li
-                    key={index}
-                    className="text-white text-[12px] md:text-lg mb-1 text-left"
-                  >
-                    <span dangerouslySetInnerHTML={{ __html: text }} />
-                  </li>
-                ))}
-                <div className="content-back-btn mt-auto">
-                  <button onClick={handleFlip} className="mt-auto px-5 py-2">
-                    Go Back
-                  </button>
-                </div>
-              </div>
-            </Tilt>
-          </div>
-        )}
+        {isFlipped && textsBack && (
+  <div className="">
+    <Tilt
+      tiltMaxAngleX={2.5}
+      tiltMaxAngleY={5}
+      glareEnable
+      tiltAngleYInitial={0}
+      glareMaxOpacity={0.1}
+      className="card card-back prize-card"
+    >
+      <div className="flex-grow flex flex-col justify-center items-start h-full px-5 py-10 text-center mx-2">
+        {textsBack.map((text: any, index: number) => (
+          <li
+            key={index}
+            className="text-white text-[12px] md:text-lg mb-1 text-left"
+          >
+            <span dangerouslySetInnerHTML={{ __html: text }} />
+          </li>
+        ))}
+        <div className="content-back-btn mt-auto">
+          <button onClick={handleFlip} className="mt-auto px-5 py-2">
+            Go Back
+          </button>
+        </div>
+      </div>
+    </Tilt>
+  </div>
+)}
+
       </CardFlip>
     </div>
   );
@@ -179,7 +180,6 @@ const PrizeCards = () => {
               key={3}
               texts={prizeData.cardContents2[3].texts}
               position={3}
-              textsBack={prizeData.cardContents2[3].textsBack}
               order={`order-4`}
               image={prizeData.cardContents2[3].image}
               imgWidth={prizeData.cardContents2[3].imgWidth}

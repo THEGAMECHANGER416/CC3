@@ -18,8 +18,7 @@ const LoadingScreen = () => {
 
   return (
     <div className={`loading-screen ${loading ? 'visible' : 'hidden'}`}>
-      {/* Your logo image */}
-      <img src="/assets/images/duhacks.png" alt="Logo" className="logo" />
+      <img src="/assets/images/CodeCubicle.svg" alt="Logo" className="logo" />
     </div>
   );
 };

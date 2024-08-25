@@ -54,3 +54,13 @@
     transform: translate(0px, 20px);
   }
 }
+
+.custom-margin-div {
+  margin-top: -50px;
+}
+
+@media (max-width: 768px) {
+  .custom-margin-div {
+    margin-top: 110px;
+  }
+}
