@@ -132,7 +132,7 @@ const cardContents2 = [
   // first winner prize
   {
     texts: [
-      "The 2nd place winner of the hackathon will be rewarded with a cash prize of  <span class='font-semibold  text-blue-500'>₹ 10,000 !!</span>  , recognizing their impressive achievements and creativity!",
+      "The 1st place winner of the hackathon, after showcasing exceptional skills and innovation, will be honored with recognition and rewarded with an impressive cash prize of  <span class='font-semibold  text-blue-500'>₹ 12,000 !!</span>",
       // "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
       
 
@@ -154,7 +154,7 @@ const cardContents2 = [
   // second winner prize
   {
     texts: [
-      "The 1st place winner of the hackathon, after showcasing exceptional skills and innovation, will be honored with recognition and rewarded with an impressive cash prize of  <span class='font-semibold  text-blue-500'>₹ 12,000 !!</span>",
+      "The 2nd place winner of the hackathon will be rewarded with a cash prize of  <span class='font-semibold  text-blue-500'>₹ 10,000 !!</span>  , recognizing their impressive achievements and creativity!",
       // "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
       
 

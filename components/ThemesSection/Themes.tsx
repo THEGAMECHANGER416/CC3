@@ -29,12 +29,7 @@ const themes = [
     title: "VLSI",
     image:
       "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Electric%20Plug.png",
-  },
-  {
-    title: "Open Innovation",
-    image:
-      "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Light%20Bulb.png",
-  },
+  }
 ];
 
 export default function Themes() {
