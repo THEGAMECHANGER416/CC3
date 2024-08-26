@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Container } from "./Container";
 import "../../styles/faq/background.css";
 
-const duHacksFaq = [
+const CCFAQ = [
   {
     question: <>Who can participate? 🌐</>,
     answer: (
@@ -157,15 +157,9 @@ const duHacksFaq = [
         Code Cubicle 3.0 is hosted by the team efforts of Geek Room. Their
         mission is to provide a platform for tech enthusiasts to showcase their
         skills and amplify their potential through an exciting blend of
-        competition, learning, and groundbreaking innovation.
+        competition, learning, and groundbreaking innovation. For more details, you can visit our - <a href="https://linktr.ee/geekroom">Linktree</a>
       </>
     ),
-  },
-  {
-    question: <>Who are the organizers of Code Cubicle 3.0, and what is their mission?</>,
-    answer: <>Code Cubicle 3.0 is hosted by the team efforts of Geek Room. Their mission 
-    is to provide a platform for tech enthusiasts to showcase their skills and amplify their 
-    potential through an exciting blend of competition, learning, and groundbreaking innovation.</>,
   },
 ];
 
@@ -216,7 +210,7 @@ export function Disclosures({ full = false }) {
 
   return (
     <div className="divide-y divide-zinc-200 border-y border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800 hover:cursor-pointer">
-      {duHacksFaq.map((item, i) => (
+      {CCFAQ.map((item, i) => (
         <div
           key={String(i)}
           className={`mx-auto text-lg ${full ? "" : "max-w-2xl"}`}

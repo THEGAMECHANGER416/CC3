@@ -3,14 +3,12 @@ import React, { useState } from "react";
 import { SocialIcon } from "react-social-icons";
 
 import {
-  FaDiscord,
   FaInstagram,
   FaLinkedinIn,
-  FaMailBulk,
-  FaTwitter,
-  FaYoutube,
+  FaDiscord,
 } from "react-icons/fa";
 
+import { AiOutlineLink } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
@@ -19,6 +17,7 @@ const Footer = () => {
     twitter: "https://x.com/geek__room_",
     linkedin: "https://www.linkedin.com/company/geekroom-codecubicle/",
     mail: "codecubicle24@gmail.com",
+    linktree: "https://linktr.ee/geekroom",
   };
 
   return (
@@ -44,6 +43,16 @@ const Footer = () => {
           <a href="https://www.instagram.com/code_cubicle_3.0/?hl=en">
             <span className="sr-only">Instagram</span>
             <FaInstagram/>
+          </a>
+          <div className=" border-r-2 transform rotate-12" />
+          <a href="https://discord.com/invite/7TEVm4pmMv">
+            <span className="sr-only">Discord</span>
+            <FaDiscord/>
+          </a>
+          <div className=" border-r-2 transform rotate-12" />
+          <a href="https://linktr.ee/geekroom">
+            <span className="sr-only">Linktree</span>
+            <AiOutlineLink/>
           </a>
         </div>
         <div className="flex justify-center">
