@@ -24,11 +24,6 @@ const themes = [
     title: "Web3",
     image:
       "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Globe%20with%20Meridians.png",
-  },
-  {
-    title: "VLSI",
-    image:
-      "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Electric%20Plug.png",
   }
 ];
 
