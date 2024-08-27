@@ -19,7 +19,6 @@ function TeamSection() {
     setShowTeam(team);
   };
 
-
   return (
     <>
       <div className="mt-36 sm:mt-40 w-screen">
