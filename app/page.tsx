@@ -1,22 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import Navbar from "../components/Navbar";
-import Timeline from "@/components/Timeline/Timeline";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection/HeroSection";
-import BackGround from "@/components/BackGround";
 import PrizeSection from "@/components/PrizeSection/PrizeSection";
 import Faq from "@/components/Faq/Faq";
-import FlareCursor from "@/components/FlareCursor";
 import Themes from "@/components/ThemesSection/Themes";
-import PreLoader from "@/components/PreLoader";
 import TeamSection from "@/components/TeamSection/TeamSection";
-import SponsorsSection from "@/components/SponsorsSection/SponsorsSection";
 import Timeline2 from "@/components/Timeline/Timeline2";
-import TweetFeed from "@/components/Tweets/TweetFeed";
 import About from "@/components/About/About";
-import LoadingScreen from "@/components/LoadingScreen";
 import SponsorsSection2 from "@/components/SponsorsSection/SponsorsSection2";
 
 export default function Home() {
