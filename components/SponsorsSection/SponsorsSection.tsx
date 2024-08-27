@@ -5,39 +5,44 @@ import Marquee from "react-fast-marquee";
 import "../../styles/sponsors/background.css";
 
 function SponsorsSection() {
-  const gold = [
-    { src: "/sponsors_logos/Devfolio_Logo-White.svg", alt: "DEVFOLIO LOGO" },
+  // const gold = [
+  //   { src: "/sponsors_logos/Devfolio_Logo-White.svg", alt: "DEVFOLIO LOGO" },
+  //   { src: "/sponsors_logos/Polygon_Logo-White.svg", alt: "POLYGON LOGO" },
+  //   { src: "/sponsors_logos/replit-light.png", alt: "REPLIT LOGO" },
+  //   { src: "/sponsors_logos/wolfram-lg.png", alt: "WOLFARM LOGO" },
+  //   { src: "/sponsors_logos/xyz-logo-white.svg", alt: "XYZ LOGO" },
+  // ];
+  // const platinum = [
+  //   { src: "/sponsors_logos/Devfolio_Logo-White.svg", alt: "DEVFOLIO LOGO" },
+  // ];
+
+  // const silver = [
+  //   { src: "/sponsors_logos/beeceptor-white.svg", alt: "BEECEPTOR LOGO" },
+  //   {
+  //     src: "/sponsors_logos/Leading_Learner_2.png",
+  //     alt: "LEADING LEARNER LOGO",
+  //   },
+  // ];
+
+  // const bronze = [
+  //   { src: "/sponsors_logos/Rosenfeld.webp", alt: "ROSENFSRCD LOGO" },
+  //   { src: "/sponsors_logos/echo3D.jpg", alt: "ECHO3D LOGO" },
+  //   { src: "/sponsors_logos/axure.svg", alt: "AXURE LOGO" },
+  //   { src: "/sponsors_logos/loft-white.png", alt: "LOFT.SH LOGO" },
+
+  // ];
+  const past = [
+    { src:"/sponsors_logos/cn.png", alt:"CODING NINJAS"},
     { src: "/sponsors_logos/Polygon_Logo-White.svg", alt: "POLYGON LOGO" },
-    { src: "/sponsors_logos/replit-light.png", alt: "REPLIT LOGO" },
-    { src: "/sponsors_logos/wolfram-lg.png", alt: "WOLFARM LOGO" },
-    { src: "/sponsors_logos/xyz-logo-white.svg", alt: "XYZ LOGO" },
-  ];
-  const platinum = [
-    { src: "/sponsors_logos/Devfolio_Logo-White.svg", alt: "DEVFOLIO LOGO" },
-  ];
-
-  const silver = [
-    { src: "/sponsors_logos/beeceptor-white.svg", alt: "BEECEPTOR LOGO" },
-    {
-      src: "/sponsors_logos/Leading_Learner_2.png",
-      alt: "LEADING LEARNER LOGO",
-    },
-  ];
-
-  const bronze = [
-    { src: "/sponsors_logos/Rosenfeld.webp", alt: "ROSENFSRCD LOGO" },
-    { src: "/sponsors_logos/echo3D.jpg", alt: "ECHO3D LOGO" },
-    { src: "/sponsors_logos/axure.svg", alt: "AXURE LOGO" },
-    { src: "/sponsors_logos/loft-white.png", alt: "LOFT.SH LOGO" },
-
-  ];
+    
+  ]
   return (
     <div className="mt-36 sm:mt-56">
       <h1 className="my-10 text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-logo sponsorContainer1">
         Sponsors
       </h1>
       <div className="md:mt-24 mt-14">
-        <h2 className="text-center m-auto md:my-8 my-4 text-white text-lg md:text-xl xl:text-2xl   md:w-1/6 w-1/2 font-semibold px-1 py-2 title-platinum rounded-md">
+        {/* <h2 className="text-center m-auto md:my-8 my-4 text-white text-lg md:text-xl xl:text-2xl md:w-1/6 w-1/2 font-semibold px-1 py-2 title-platinum rounded-md">
           Platinum Sponsors
         </h2>
         <Marquee speed={20} autoFill={true}>
@@ -63,7 +68,7 @@ function SponsorsSection() {
             />
           ))}
         </Marquee>
-        <h2 className="text-center m-auto md:my-8 my-4 text-white text-lg md:text-xl xl:text-2xl   md:w-1/6 w-1/2  font-semibold px-1 py-2 title-gold  rounded-md">
+        <h2 className="text-center m-auto md:my-8 my-4 text-white text-lg md:text-xl xl:text-2xl md:w-1/6 w-1/2 font-semibold px-1 py-2 title-gold  rounded-md">
           Gold Sponsors
         </h2>
 
@@ -93,13 +98,12 @@ function SponsorsSection() {
               imageAlt={alt}
             />
           ))}
-        </Marquee>
+        </Marquee> */}
         <h2 className="text-center m-auto md:my-8 my-4 text-white text-lg md:text-xl xl:text-2xl   md:w-1/6 w-1/2  font-semibold px-1 py-2 title-bronze rounded-md">
-          Bronze Sponsors
+          Past Sponsors
         </h2>
-
         <Marquee speed={100} autoFill={true}>
-          {bronze.map(({ src, alt }) => (
+          {past.map(({ src, alt }) => (
             <SponsorCard
               key={src}
               imageUrl={src}

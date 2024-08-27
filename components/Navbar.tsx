@@ -52,7 +52,7 @@ const Navbar = (activeSection: any) => {
   }
 
   return (
-    <section id="nav" className="mb-36">
+    <section id="nav" className="mb-10">
       {isOpen && (
         <motion.div
           initial={{ opacity: 0, y: 2000 }}
@@ -68,20 +68,14 @@ const Navbar = (activeSection: any) => {
         <div className="sm:pl-7 mr-auto">
           <a href="#top">
             <img
-              src="/assets/images/duhacks.png"
-              alt="DU Hacks"
-              width={50}
-              height={50}
+              src="/assets/images/ccxmastercard.png"
+              alt="Code Cubicle X Mastercard Logo"
+              width={100}
+              height={100}
             />
           </a>
         </div>
         <div className="flex space-x-2">
-          <div className="bg-gray-100  font-medium text-black p-2 mr-2 rounded-lg m-1">
-            <a href="/swag" onClick={handelClick}>
-              Digital Swag
-            </a>
-          </div>
-
           <div className="hidden md:flex flex-wrap gap-5 text-white">
             <div
               className={`nav-titles nav-titles-ltr ${

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Container } from "./Container";
 import "../../styles/faq/background.css";
 
-const duHacksFaq = [
+const CCFAQ = [
   {
     question: <>Who can participate? 🌐</>,
     answer: (
@@ -157,15 +157,9 @@ const duHacksFaq = [
         Code Cubicle 3.0 is hosted by the team efforts of Geek Room. Their
         mission is to provide a platform for tech enthusiasts to showcase their
         skills and amplify their potential through an exciting blend of
-        competition, learning, and groundbreaking innovation.
+        competition, learning, and groundbreaking innovation. For more details, you can visit our - <a href="https://linktr.ee/geekroom">Linktree</a>
       </>
     ),
-  },
-  {
-    question: <>Who are the organizers of Code Cubicle 3.0, and what is their mission?</>,
-    answer: <>Code Cubicle 3.0 is hosted by the team efforts of Geek Room. Their mission 
-    is to provide a platform for tech enthusiasts to showcase their skills and amplify their 
-    potential through an exciting blend of competition, learning, and groundbreaking innovation.</>,
   },
 ];
 
@@ -189,11 +183,11 @@ export default function FAQ() {
               {/* <div className="flex justify-center"> */}
 
               <img
-                src="/assets/images/mascot.svg"
+                src="/assets/images/avatar_faq.png"
                 alt="faq boy"
-                width={250}
-                height={250}
-                className="object-contain scale-x-[-1]"
+                width={500}
+                height={500}
+                className="object-contain scale-x-[-1] md:-translate-x-[-40px] md:-translate-y-[40px] translate-y-[30px]"
               />
               {/* </div> */}
             </div>
@@ -216,7 +210,7 @@ export function Disclosures({ full = false }) {
 
   return (
     <div className="divide-y divide-zinc-200 border-y border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800 hover:cursor-pointer">
-      {duHacksFaq.map((item, i) => (
+      {CCFAQ.map((item, i) => (
         <div
           key={String(i)}
           className={`mx-auto text-lg ${full ? "" : "max-w-2xl"}`}

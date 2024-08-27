@@ -3,17 +3,16 @@ const cardContents = [
   // second winner prize
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.5000</span>",
-      "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
-      
+      "The 2nd place winner of the hackathon will be rewarded with a cash prize of  <span class='font-semibold  text-blue-500'>₹ 10,000 !!</span>  , recognizing their impressive achievements and creativity!",
+      // "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
 
     ],
-    textsBack: [
-      "Pro Subscription plan from Jdoodle",
-      "EdTech Resource Bundle + EdTech Expansion Pack from Leading Learners worth $200",
-      "Axure RP Subscription",
-      "Winners Certificate",
-    ],
+    // textsBack: [
+    //   "Pro Subscription plan from Jdoodle",
+    //   "EdTech Resource Bundle + EdTech Expansion Pack from Leading Learners worth $200",
+    //   "Axure RP Subscription",
+    //   "Winners Certificate",
+    // ],
     image:
       "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/2nd%20Place%20Medal.png",
     imgWidth: 160,
@@ -23,18 +22,18 @@ const cardContents = [
   // first winner prize
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.8000</span>",
-      "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
+      "The 1st place winner of the hackathon, after showcasing exceptional skills and innovation, will be honored with recognition and rewarded with an impressive cash prize of  <span class='font-semibold  text-blue-500'>₹ 12,000 !!</span>",
+      // "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
       
 
     ],
-    textsBack: [
-      "Pro Subscription plan from Jdoodle",
-      "EdTech Resource Bundle + EdTech Expansion Pack from Leading Learners worth $200",
-      "A team plan from Beeceptor worth $240",
-      "Axure RP Subscription",
-      "Winners Certificate",
-    ],
+    // textsBack: [
+    //   "Pro Subscription plan from Jdoodle",
+    //   "EdTech Resource Bundle + EdTech Expansion Pack from Leading Learners worth $200",
+    //   "A team plan from Beeceptor worth $240",
+    //   "Axure RP Subscription",
+    //   "Winners Certificate",
+    // ],
     image:
       "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/1st%20Place%20Medal.png",
     imgWidth: 160,
@@ -44,17 +43,17 @@ const cardContents = [
   // 3rd winner prize
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.3000</span>",
-      "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
+      "The 3rd place winner of the hackathon will receive a cash prize of  <span class='font-semibold  text-blue-500'>Rs.8000</span>  , celebrating their exceptional contributions and innovative ideas!",
+      // "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
       
 
     ],
-    textsBack: [
-      "Pro Subscription plan from Jdoodle",
-      "EdTech Resource Bundle + EdTech Expansion Pack from Leading Learners worth $200",
-      "Axure RP Subscription",
-      "Winners Certificate",
-    ],
+    // textsBack: [
+    //   "Pro Subscription plan from Jdoodle",
+    //   "EdTech Resource Bundle + EdTech Expansion Pack from Leading Learners worth $200",
+    //   "Axure RP Subscription",
+    //   "Winners Certificate",
+    // ],
     image:
       "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/3rd%20Place%20Medal.png",
     imgWidth: 160,
@@ -63,8 +62,8 @@ const cardContents = [
   //all participants
   {
     texts: [
-      "All participate will get DUHacks 3.0 certificates",
-      "To all participants will have Wolfram | One for 30 days",
+      "Even if you didn’t win a prize, your participation has been truly valuable",
+      "You will receive a <span class='font-semibold  text-blue-500'>certificate</span> of participation to recognize your effort during the hackathon.",
     ],
     textsBack: [
       "To All participants one - month free Verbwire Starter Subscription",
@@ -133,18 +132,18 @@ const cardContents2 = [
   // first winner prize
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.8000</span>",
-      "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
+      "The 1st place winner of the hackathon, after showcasing exceptional skills and innovation, will be honored with recognition and rewarded with an impressive cash prize of  <span class='font-semibold  text-blue-500'>₹ 12,000 !!</span>",
+      // "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
       
 
     ],
-    textsBack: [
-      "Pro Subscription plan from Jdoodle",
-      "EdTech Resource Bundle + EdTech Expansion Pack from Leading Learners worth $200",
-      "A team plan from Beeceptor worth $240",
-      "Axure RP Subscription",
-      "Winners Certificate",
-    ],
+    // textsBack: [
+    //   "Pro Subscription plan from Jdoodle",
+    //   "EdTech Resource Bundle + EdTech Expansion Pack from Leading Learners worth $200",
+    //   "A team plan from Beeceptor worth $240",
+    //   "Axure RP Subscription",
+    //   "Winners Certificate",
+    // ],
     image:
       "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/1st%20Place%20Medal.png",
     imgWidth: 120,
@@ -155,17 +154,17 @@ const cardContents2 = [
   // second winner prize
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.5000</span>",
-      "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
+      "The 2nd place winner of the hackathon will be rewarded with a cash prize of  <span class='font-semibold  text-blue-500'>₹ 10,000 !!</span>  , recognizing their impressive achievements and creativity!",
+      // "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
       
 
     ],
-    textsBack: [
-      "Pro Subscription plan from Jdoodle",
-      "EdTech Resource Bundle + EdTech Expansion Pack from Leading Learners worth $200",
-      "Axure RP Subscription",
-      "Winners Certificate",
-    ],
+    // textsBack: [
+    //   "Pro Subscription plan from Jdoodle",
+    //   "EdTech Resource Bundle + EdTech Expansion Pack from Leading Learners worth $200",
+    //   "Axure RP Subscription",
+    //   "Winners Certificate",
+    // ],
     image:
       "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/2nd%20Place%20Medal.png",
     imgWidth: 120,
@@ -176,17 +175,17 @@ const cardContents2 = [
   // 3rd winner prize
   {
     texts: [
-      "Cash prize of <span class='font-semibold  text-blue-500'>Rs.3000</span>",
-      "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
+      "The 3rd place winner of the hackathon will receive a cash prize of  <span class='font-semibold  text-blue-500'>Rs.8000</span>  , celebrating their exceptional contributions and innovative ideas!",
+      // "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
       
 
     ],
-    textsBack: [
-      "Pro Subscription plan from Jdoodle",
-      "EdTech Resource Bundle + EdTech Expansion Pack from Leading Learners worth $200",
-      "Axure RP Subscription",
-      "Winners Certificate",
-    ],
+    // textsBack: [
+    //   "Pro Subscription plan from Jdoodle",
+    //   "EdTech Resource Bundle + EdTech Expansion Pack from Leading Learners worth $200",
+    //   "Axure RP Subscription",
+    //   "Winners Certificate",
+    // ],
     image:
       "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/3rd%20Place%20Medal.png",
     imgWidth: 120,
@@ -195,13 +194,13 @@ const cardContents2 = [
   //all participants
   {
     texts: [
-      "All participate will get DUHacks 3.0 certificates",
-      "To all participants will have Wolfram | One for 30 days",
+      "Even if you didn’t win a prize, your participation has been truly valuable",
+      "You will receive a <span class='font-semibold  text-blue-500'>certificate</span> of participation to recognize your effort and the experience gained during the hackathon.",
     ],
-    textsBack: [
-      "To All participants one - month free Verbwire Starter Subscription",
-      "Beeceptor 1-month subscription worth $25 credits.",
-    ],
+    // textsBack: [
+    //   "To All participants one - month free Verbwire Starter Subscription",
+    //   "Beeceptor 1-month subscription worth $25 credits.",
+    // ],
     image: "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Sparkles.png",
     imgWidth: 100,
     // link: "https://www.verbwire.com/",

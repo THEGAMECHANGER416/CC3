@@ -54,3 +54,31 @@
     transform: translate(0px, 20px);
   }
 }
+
+.custom-margin-div {
+  margin-top: -50px;
+}
+
+.custom-devfolio-button {
+  background: rgba(39, 39, 42, 0.43);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(39, 39, 42, 0.5);
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.custom-devfolio-button:hover {
+  background: rgb(234, 0, 27, 0.5); 
+}
+
+@media (max-width: 768px) {
+  .custom-margin-div {
+    margin-top: 110px;
+  }
+}

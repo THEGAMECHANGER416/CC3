@@ -6,9 +6,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DUHacks 3.0",
-  description: "DUHacks 3.0",
-  icons: "/assets/images/duhacks.png",
+  title: "Code Cubicle 3.0",
+  description: "Code Cubicle 3.0 isn’t just an event; it’s a playground for innovators where developers, designers, and tech enthusiasts come together to bring their boldest ideas to fruition. 🌍",
+  icons: "/assets/images/CodeCubicle.svg",
 };
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>{children}
         <Analytics />
         <SpeedInsights />
-
+        
       </body>
     </html>
 
