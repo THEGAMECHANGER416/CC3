@@ -1,5 +1,6 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import "../../styles/themes/background.css";
 
 const data = [
@@ -37,6 +38,12 @@ const data = [
 ];
 
 export default function Themes() {
+  const [expandedItem, setExpandedItem] = useState<number | null>(null);
+
+  const handleToggle = (serialNo: number) => {
+    setExpandedItem(expandedItem === serialNo ? null : serialNo);
+  };
+
   return (
     <>
       <h1 className="mt-36 sm:mt-56 text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-logo">
@@ -46,16 +53,54 @@ export default function Themes() {
         {data.map((item) => (
           <div
             key={item.serialNo}
-            className="p-4 border border-gray-300 rounded-lg bg-gray-800 text-white"
+            className="border-2 shadow-2xl border-gray-300 rounded-lg sponsor_css text-white"
+            style={{ backgroundColor: "rgba(39, 39, 42, 0.43)" }}
           >
-            <div className="text-lg font-semibold mb-2">
-              Serial No: {item.serialNo}
-            </div>
-            <div className="text-xl font-bold mb-2">{item.heading}</div>
-            <p className="text-base">{item.description}</p>
+            <button
+              onClick={() => handleToggle(item.serialNo)}
+              className="w-full text-left p-4 font-bold rounded-lg focus:outline-none bg-transparent flex items-center justify-between"
+            >
+              <span>{item.heading}</span>
+              {expandedItem === item.serialNo ? (
+                <FaChevronUp className="text-white" />
+              ) : (
+                <FaChevronDown className="text-white" />
+              )}
+            </button>
+            {expandedItem === item.serialNo && (
+              <div
+                className="p-4 rounded-lg sponsor_css"
+                // style={{ backgroundColor: "rgba(39, 39, 42, 0.43)" }}
+              >
+                <p className="text-base">{item.description}</p>
+              </div>
+            )}
           </div>
         ))}
       </div>
     </>
   );
 }
+// export default function Themes() {
+//   return (
+//     <>
+//       <h1 className="mt-36 sm:mt-56 text-center text-white text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-logo">
+//         Problem Statements
+//       </h1>
+//       <div className="flex flex-col gap-6 mt-20 mx-4 sm:mx-24 bg-transparent border border-gray-300 rounded-lg shadow-md p-4">
+//         {data.map((item) => (
+//           <div
+//             key={item.serialNo}
+//             className="p-4 border border-gray-300 rounded-lg bg-gray-800 text-white"
+//           >
+//             <div className="text-lg font-semibold mb-2">
+//               Serial No: {item.serialNo}
+//             </div>
+//             <div className="text-xl font-bold mb-2">{item.heading}</div>
+//             <p className="text-base">{item.description}</p>
+//           </div>
+//         ))}
+//       </div>
+//     </>
+//   );
+// }
