@@ -16,6 +16,7 @@ type SponsorsGroup = {
   // gold?: Sponsor[];
   // silver?: Sponsor[];
   // bronze?: Sponsor[];
+  present?:Sponsor[];
   past?: Sponsor[];
 };
 
@@ -39,6 +40,14 @@ export default function SponsorsSection2() {
     //     class: "scale-[1] md:scale-[1]",
     //   },
     // ],
+    present: [
+      {
+        src: "/sponsors_logos/aops.png",
+        alt: "Apex Education & Consultancy Logo",
+        link: "https://artofproblemsolving.com/",
+        class: "scale-[1] md:scale-[1]",
+      },
+    ],
     // gold: [
     //   {
     //     src: "/sponsors_logos/Devfolio_Logo-White.svg",
@@ -155,6 +164,9 @@ export default function SponsorsSection2() {
     // gold: {
     //   imgSize: "h-[120px] w-[250px] px-2 py-1 md:h-[160px] md:w-[500px]",
     // },
+    present: {
+      imgSize: "h-[80px] w-[250px] px-2 py-1 md:h-[140px] md:w-[420px]",
+    },
     past: {
       imgSize: "h-[80px] w-[250px] px-2 py-1 md:h-[140px] md:w-[420px]",
     },
