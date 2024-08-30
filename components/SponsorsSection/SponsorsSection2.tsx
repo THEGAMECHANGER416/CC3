@@ -47,6 +47,24 @@ export default function SponsorsSection2() {
         link: "https://artofproblemsolving.com/",
         class: "scale-[1] md:scale-[1]",
       },
+      {
+        src: "/sponsors_logos/jetbrains.jpg",
+        alt: "JETBRAINS",
+        link: "https://www.jetbrains.com",
+        class: "scale-[1] h-14/15 md:scale-[1] rounded-xl",
+      },
+      {
+        src: "/sponsors_logos/hack.png",
+        alt: "HACKQUEST",
+        link: "https://www.hackquest.io/",
+        class: "w-2/3 h-8/9 scale-90 md:scale-125"
+      },
+      {
+        src: "/sponsors_logos/kw2.jpg",
+        alt: "KWIKPIC",
+        link: "https://www.kwikpic.in",
+        class: "scale-[1] md:scale-[1] rounded-xl"
+      },
     ],
     // gold: [
     //   {
