@@ -6,35 +6,53 @@ import "../../styles/themes/background.css";
 const data = [
   {
     serialNo: 1,
-    heading: "Money Genie 🪄: Personalized Financial Advice",
+    heading: "Genie 🪄: Personalized Assistant",
     description:
-      "Imagine an AI that provides personalized financial advice tailored to your spending patterns, financial goals, and the latest market trends. This AI, potentially enhanced by large language models (LLMs), could generate custom investment strategies, budgeting plans, and financial tips that are unique to each user's situation. By analyzing real-time financial data and adapting to your changing circumstances, Money Genie 🪄 ensures your financial advice is always relevant and actionable. How can we develop a system that not only understands the financial landscape but also creates highly individualized financial guidance, helping you make smart decisions and achieve your financial dreams?",
+      "Imagine an AI that provides personalized advice tailored to your day-to-day life patterns, financial goals, and the latest trends. This AI, potentially enhanced by large language models (LLMs), could generate custom strategies, plans, and tips that are unique to each user's situation. By analyzing real-time data and adapting to your changing circumstances, Genie 🪄 ensures your daily advice is always relevant and actionable. How can we develop a system that not only understands the recent landscape but also creates highly individualized guidance, helping you make smart decisions and achieve your best output?",
   },
   {
     serialNo: 2,
-    heading: "Customer Support Innovation",
+    heading: "🙂‍↔️Customer Support Innovation",
     description:
-      "Yes, the boring old customer support. But imagine if there was a way to automate these conversations 🤤. With the help of large language models (LLMs), an AI system could revolutionize customer support, improving response times, accuracy, and customer satisfaction through advanced natural language processing. How can we leverage LLMs to create customer support solutions that are more efficient, responsive, and human-like?",
+      "Yes, the boring old customer support. But imagine if there was a way to automate these conversations 🤤. With the advancement of Generative AI, an AI system could revolutionize customer support, improving response times, accuracy, and customer satisfaction through advanced natural language processing. How can we leverage GenAI to create customer support solutions that are more efficient, responsive, and human-like?",
   },
   {
     serialNo: 3,
     heading: "🔒 Secure the Future: Financial Safety Challenge",
     description:
-      "In today's digital world, keeping our financial lives secure is more important than ever. How can technology help us protect what matters most? This challenge is all about finding innovative ways to enhance financial safety—whether through new ideas in security, creative tools for users, or something completely unexpected. Consider how large language models (LLMs) might be used to assist in analyzing patterns, providing alerts, or enhancing user communication to make the digital world safer for everyone.",
+      "In today's digital world, keeping our financial lives secure is more important than ever. How can technology help us protect what matters most? This challenge is all about finding innovative ways to enhance financial safety—whether through new ideas in security, creative tools for users, or something completely unexpected. Consider this new hype of AI might be used to assist in analyzing patterns, providing alerts, or enhancing user communication to make the digital world safer for everyone.",
   },
-
   {
     serialNo: 4,
-    heading: "🌍 Shape the Future: Societal Impact Challenge",
+    heading: "😍Empowering Gender Equality Through Tech-Driven Ecosystems",
     description:
-      "What will the future look like? That’s up to you! This challenge invites you to imagine and create tools or technologies that can help us understand and shape the world around us. Whether it's about improving lives, solving big problems, or just making the world a better place, consider how large language models (LLMs) might assist in processing complex data, enhancing communication, or offering new perspectives. How will your idea, possibly with the help of LLMs, change the way we think about and interact with our society?",
+      "In a world striving for balance, how can we harness technology to build ecosystems that proactively support gender equality across every sphere of life? Think beyond the traditional approaches—consider platforms that use AI to identify and combat gender bias in real time, or even blockchain-based systems that ensure equal access to resources. Your challenge is to create a solution that not only addresses the symptoms of gender inequality but tackles its root causes in innovative and measurable ways.",
   },
   {
     serialNo: 5,
-    heading: "🎉 Experience Revolution: Rethinking Large Events",
+    heading: "Citizen-Centric Governance: Redefining Public Service in the Digital Age 📢",
     description:
-      "Large events are a staple of entertainment and culture, but what could make them even better? Here’s your chance to reimagine the experience of attending or participating in large-scale events. Whether it’s through new technologies, creative interactions, or something completely out-of-the-box, think about how large language models (LLMs) could help enhance personalization, interactivity, or communication to transform the way people enjoy big events. Dream big and think about how you can make the next concert, game, or festival an unforgettable experience for everyone involved. 🎉",
+      "Imagine a world where government services are not just efficient but anticipatory, responding to citizen needs before they even arise. How can we use technology to create a government that feels more like a trusted partner than a distant authority? Think of GenAI-driven solutions that predict public service demands, or decentralized systems that allow citizens to co-create policies in real-time. Wouldn't it be soooo… cool useful?",
   },
+  {
+    serialNo: 6,
+    heading: "Nature’s AI Guide 🌍: Predicting and Adapting to Climate Change",
+    description:
+      "As climate change reshapes our world, we need smart tools to help us understand and prepare for the future. Imagine an AI that can predict how our environment, animal habitats, and weather, sustainable development patterns will change in the coming years. This AI could help planners, governments, and conservationists make smarter decisions to protect wildlife, build climate-friendly cities, and create resilient communities. How can we use GenAI to not only predict nature’s changes but also help us build a future where both people and the planet thrive?",
+  },
+
+  // {
+  //   serialNo: 7,
+  //   heading: "🌍 Shape the Future: Societal Impact Challenge",
+  //   description:
+  //     "What will the future look like? That’s up to you! This challenge invites you to imagine and create tools or technologies that can help us understand and shape the world around us. Whether it's about improving lives, solving big problems, or just making the world a better place, consider how large language models (LLMs) might assist in processing complex data, enhancing communication, or offering new perspectives. How will your idea, possibly with the help of LLMs, change the way we think about and interact with our society?",
+  // },
+  // {
+  //   serialNo: 8,
+  //   heading: "🎉 Experience Revolution: Rethinking Large Events",
+  //   description:
+  //     "Large events are a staple of entertainment and culture, but what could make them even better? Here’s your chance to reimagine the experience of attending or participating in large-scale events. Whether it’s through new technologies, creative interactions, or something completely out-of-the-box, think about how large language models (LLMs) could help enhance personalization, interactivity, or communication to transform the way people enjoy big events. Dream big and think about how you can make the next concert, game, or festival an unforgettable experience for everyone involved. 🎉",
+  // },
 ];
 
 export default function Themes() {
