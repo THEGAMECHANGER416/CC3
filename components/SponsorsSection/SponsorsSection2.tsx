@@ -65,6 +65,7 @@ export default function SponsorsSection2() {
         link: "https://www.kwikpic.in",
         class: "scale-[1] md:scale-[1] rounded-xl"
       },
+      { src: "/sponsors_logos/tech.png", alt: "TECH LOGO",link: "https://techcanvass.com/", },
     ],
     // gold: [
     //   {
