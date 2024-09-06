@@ -40,6 +40,18 @@ const data = [
     description:
       "As climate change reshapes our world, we need smart tools to help us understand and prepare for the future. Imagine an AI that can predict how our environment, animal habitats, and weather, sustainable development patterns will change in the coming years. This AI could help planners, governments, and conservationists make smarter decisions to protect wildlife, build climate-friendly cities, and create resilient communities. How can we use GenAI to not only predict nature’s changes but also help us build a future where both people and the planet thrive?",
   },
+  {
+    serialNo: 7,
+    heading: "Smart Query AI 🧠: Unlocking Insights from Structured Data with GenAI",
+    description:
+      "In a world overflowing with data, the ability to extract valuable insights from structured datasets is critical. The challenge involves developing a GenAI system that can interpret and provide meaningful information from structured data sources, such as databases, spreadsheets, or APIs. This AI should be capable of understanding complex queries in natural language, generating insightful summaries, identifying patterns, and offering predictive analytics. The goal is to create a versatile tool that can serve various industries, from finance and healthcare to education and logistics, making data-driven decisions accessible to everyone.",
+  },
+  {
+    serialNo: 8,
+    heading: "Image Manipulator AI: Making Professional Photography",
+    description:
+      "Create an innovative solution using Stable Diffusion and Flux that enhances or streamlines image editing for professional photography. Address one or more challenges faced by these users who need it, such as automated retouching, intelligent composition assistance, or advanced style transfer. Your project should significantly improve workflow efficiency or image quality in professional photography contexts.",
+  },
 
   // {
   //   serialNo: 7,
