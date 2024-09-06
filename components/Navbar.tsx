@@ -68,7 +68,7 @@ const Navbar = (activeSection: any) => {
         <div className="sm:pl-7 mr-auto">
           <a href="#top">
             <img
-              src="/assets/images/ccxmastercardxkaggledays.png"
+              src="/assets/images/GR.png"
               alt="Code Cubicle X Mastercard Logo"
               width={180}
               height={100}
