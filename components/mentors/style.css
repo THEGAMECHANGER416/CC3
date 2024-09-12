@@ -1,0 +1,66 @@
+/* Slider container and feature box styles */
+.slider-container {
+  width: 85rem; /* Full width of the visible area */
+  height: 28rem;
+  overflow: hidden;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.feature-container {
+  display: flex;
+  width: fit-content;
+  animation: slide 40s linear infinite;
+  animation-play-state: running; /* Default to running */
+}
+
+.feature-box {
+  width: 15rem;
+  height: 20rem;
+  margin-top: 3rem;
+  background-color: #232c33;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin-right: 20px;
+  text-align: center;
+  font-family: "Macondo", cursive;
+}
+
+/* Keyframes for smooth sliding */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause animation on hover */
+.slider-container:hover .feature-container {
+  animation-play-state: paused; /* Freeze animation on hover */
+}
+
+/* Responsive styles for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .slider-container {
+    width: 90%; /* Adjust width for tablets */
+    margin-left: 0;
+  }
+}
+
+/* Responsive styles for mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .slider-container {
+    width: 100%; /* Full width for mobile */
+  }
+
+  .feature-box {
+    width: 10rem; /* Adjust box width for mobile */
+    font-size: 1rem;
+  }
+}
