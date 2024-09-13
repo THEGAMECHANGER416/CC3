@@ -3,7 +3,7 @@ const cardContents = [
   // second winner prize
   {
     texts: [
-      "The 2nd place winner of the hackathon will be rewarded with a cash prize of  <span class='font-semibold  text-blue-500'>₹ 10,000 !!</span>  , recognizing their impressive achievements and creativity!",
+      "The 2nd place winner of the hackathon will be rewarded with a cash prize of  <span class='font-semibold  text-blue-500'>₹ 8,000 !!</span>  , recognizing their impressive achievements and creativity!",
       // "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
 
     ],
@@ -43,7 +43,7 @@ const cardContents = [
   // 3rd winner prize
   {
     texts: [
-      "The 3rd place winner of the hackathon will receive a cash prize of  <span class='font-semibold  text-blue-500'>Rs.8000</span>  , celebrating their exceptional contributions and innovative ideas!",
+      "The 3rd place winner of the hackathon will receive a cash prize of  <span class='font-semibold  text-blue-500'>Rs.5000</span>  , celebrating their exceptional contributions and innovative ideas!",
       // "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
       
 
@@ -154,7 +154,7 @@ const cardContents2 = [
   // second winner prize
   {
     texts: [
-      "The 2nd place winner of the hackathon will be rewarded with a cash prize of  <span class='font-semibold  text-blue-500'>₹ 10,000 !!</span>  , recognizing their impressive achievements and creativity!",
+      "The 2nd place winner of the hackathon will be rewarded with a cash prize of  <span class='font-semibold  text-blue-500'>₹ 8,000 !!</span>  , recognizing their impressive achievements and creativity!",
       // "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
       
 
@@ -175,7 +175,7 @@ const cardContents2 = [
   // 3rd winner prize
   {
     texts: [
-      "The 3rd place winner of the hackathon will receive a cash prize of  <span class='font-semibold  text-blue-500'>Rs.8000</span>  , celebrating their exceptional contributions and innovative ideas!",
+      "The 3rd place winner of the hackathon will receive a cash prize of  <span class='font-semibold  text-blue-500'>Rs.5000</span>  , celebrating their exceptional contributions and innovative ideas!",
       // "Wolfram award for a year of Wolfram|One Personal Edition plus a one-year subscription to Wolfram|Alpha Pro. The value of each award is $375.00.",
       
 
