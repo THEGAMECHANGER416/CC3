@@ -16,7 +16,7 @@ type SponsorsGroup = {
   // gold?: Sponsor[];
   // silver?: Sponsor[];
   // bronze?: Sponsor[];
-  present?:Sponsor[];
+  present?: Sponsor[];
   past?: Sponsor[];
 };
 
@@ -57,15 +57,25 @@ export default function SponsorsSection2() {
         src: "/sponsors_logos/hack.png",
         alt: "HACKQUEST",
         link: "https://www.hackquest.io/",
-        class: "w-2/3 h-8/9 scale-90 md:scale-125"
+        class: "w-2/3 h-8/9 scale-90 md:scale-125",
       },
       {
         src: "/sponsors_logos/kw2.jpg",
         alt: "KWIKPIC",
         link: "https://www.kwikpic.in",
-        class: "scale-[1] md:scale-[1] rounded-xl"
+        class: "scale-[1] md:scale-[1] rounded-xl",
       },
-      { src: "/sponsors_logos/tech.png", alt: "TECH LOGO",link: "https://techcanvass.com/", },
+      {
+        src: "/sponsors_logos/tech.png",
+        alt: "TECH LOGO",
+        link: "https://techcanvass.com/",
+      },
+      {
+        src: "/sponsors_logos/commudle.png",
+        alt: "Commudle Logo",
+        link: "https://www.commudle.com/",
+        class: "scale-[1] md:scale-[1]",
+      },
     ],
     // gold: [
     //   {
@@ -118,26 +128,56 @@ export default function SponsorsSection2() {
         link: "https://www.codingninjas.com/",
         class: "scale-[0.8]",
       },
-      { src: "/sponsors_logos/orkes.png",
+      {
+        src: "/sponsors_logos/orkes.png",
         alt: "ORKES LOGO",
         link: "https://www.orkes.io/",
-         },
-      { src: "/sponsors_logos/tech.png", alt: "TECH LOGO",link: "https://techcanvass.com/", },
+      },
+      {
+        src: "/sponsors_logos/tech.png",
+        alt: "TECH LOGO",
+        link: "https://techcanvass.com/",
+      },
       // { src: "/sponsors_logos/jet.png", alt: "JETBRAINS LOGO",link: "https://www.jetbrains.com/", },
-      { src: "/sponsors_logos/git(2).png", alt: "GitHub LOGO",link: "https://github.com/",class: "w-2/3 scale-90 md:scale-125" },
-      { src: "/sponsors_logos/interview.png", alt: "INTERVIEWBIT",link: "https://interviewbuddy.net/", },
-      { src: "/sponsors_logos/eth.png", alt: "ETHIndia",link: "https://ethindia.co/", },
+      {
+        src: "/sponsors_logos/git(2).png",
+        alt: "GitHub LOGO",
+        link: "https://github.com/",
+        class: "w-2/3 scale-90 md:scale-125",
+      },
+      {
+        src: "/sponsors_logos/interview.png",
+        alt: "INTERVIEWBIT",
+        link: "https://interviewbuddy.net/",
+      },
+      {
+        src: "/sponsors_logos/eth.png",
+        alt: "ETHIndia",
+        link: "https://ethindia.co/",
+      },
       // { src: "/sponsors_logos/algo.jpeg", alt: "AlgoZenith",link: "https://algozenith.com/", },
       {
         src: "/sponsors_logos/Polygon_Logo-White.svg",
         alt: "POLYGON",
         link: "https://polygon.technology/",
       },
-      { src: "/sponsors_logos/replit-light.png", alt: "REPLIT LOGO",link: "https://replit.com/", },
-      { src: "/sponsors_logos/quil.png", alt: "QuilAudits",link: "https://www.quilaudits.com/", },
+      {
+        src: "/sponsors_logos/replit-light.png",
+        alt: "REPLIT LOGO",
+        link: "https://replit.com/",
+      },
+      {
+        src: "/sponsors_logos/quil.png",
+        alt: "QuilAudits",
+        link: "https://www.quilaudits.com/",
+      },
       // { src: "/sponsors_logos/0x.png", alt: "0x.Day",link: "https://0x.day/", },
       // { src: "/sponsors_logos/lwt.webp", alt: "LWT",link: "https://www.learningwhiletravelling.com/", },
-      { src: "/sponsors_logos/Devfolio_Logo-White.svg", alt: "DEVFOLIO LOGO",link: "https://devfolio.co/", },
+      {
+        src: "/sponsors_logos/Devfolio_Logo-White.svg",
+        alt: "DEVFOLIO LOGO",
+        link: "https://devfolio.co/",
+      },
     ],
     // bronze: [
     //   {
